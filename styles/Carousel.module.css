@@ -10,14 +10,6 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  animation: slide 0.5s forwards;
-  animation-delay: 2s;
-}
-
-@keyframes galleryCell {
-  100% {
-    left: 0;
-  }
 }
 
 .galleryCell img {
