@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap");
+
+:root {
+  --primary-color: #278980;
+  --secondary-color: #2bbcb2;
+  --tertiary-color: #c5c8c4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+
+/* Infos */
+.infos {
+  padding-top: 50px;
+}
+
+.infos .container {
+  padding-bottom: 10px;
+}
+
+.infos h1 {
+  margin: 20px 0;
+  align-self: center;
+}
+.infos .flex {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.infos .flex-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.infos .card {
+  max-width: 25%;
+}
+
+/* Statements */
+.statements h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.statements .flex {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.statements .container {
+  background-color: #fff;
+}
+
+.statements img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 100%;
+}
+
+.footer .flex {
+  align-items: center;
+}
+.footer a {
+  color: #fff;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.push {
+  height: 27.5px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Products */
+
+.products h1 {
+  margin: 50px 0;
+}
+
+.products .flex {
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 120px;
+}
+
+.products .collapsible {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.products img {
+  width: 30%;
+}
+
+.product-content {
+  display: none;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+.products .card:hover {
+  cursor: pointer;
+}
+
+/* Media Queries */
+/* Tablets and under*/
+@media (max-width: 1200px) {
+  .infos .flex {
+    align-items: center;
+  }
+
+  .infos h1 {
+    text-align: center;
+  }
+
+  .infos .flex-grid {
+    flex-direction: column;
+  }
+
+  .infos .card {
+    max-width: 100%;
+  }
+
+  .statements .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .statements img {
+    width: 30%;
+  }
+
+  .footer .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+  .address {
+    align-items: center;
+  }
+
+  .social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+  }
+  .products h1 {
+    text-align: center;
+  }
+
+  .products .collapsible {
+    width: 100%;
+    text-align: center;
+  }
+
+  .products img {
+    width: 60%;
+  }
+  .products .product-content {
+    text-align: center;
+    width: 100%;
+  }
+
+  .push {
+    height: 183px;
+  }
+}
+
+/* Mobile*/
+@media (max-width: 500px) {
+  .statements img {
+    width: 80%;
+  }
+
+  .social ul {
+    gap: 20px;
+  }
+}
+
+/** Dunno where to put it yet **/
+
+.bg-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  width: 100%;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px 20px 10px;
+  margin: 10px;
+  color: black;
+  transition: 0.2s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.card-title {
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.icon {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin: 10px 0;
+}
