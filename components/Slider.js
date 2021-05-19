@@ -38,7 +38,7 @@ const Slider = () => {
     }
 
     return (
-        <div className={`${stylesCarousel.carousel} container`}>
+        <div className={`${stylesCarousel.carousel}`}>
             <CarouselArrow direction="left"
             onClick={() => onClick("prev") }
             />

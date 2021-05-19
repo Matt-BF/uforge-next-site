@@ -18,7 +18,7 @@
 }
 
 .arrow {
-  color: #278980;
+  color: var(--primary-color);
   cursor: pointer;
 }
 

@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.flex {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.flexGrid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  width: 100%;
+}

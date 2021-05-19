@@ -73,10 +73,6 @@ img {
   justify-content: space-around;
 }
 
-.infos .card {
-  max-width: 25%;
-}
-
 /* Statements */
 .statements h1 {
   text-align: center;
@@ -286,32 +282,6 @@ img {
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  padding: 5px 20px 10px;
-  margin: 10px;
-  color: black;
-  transition: 0.2s ease-out;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  transition: 0.2s;
-}
-
-.card-title {
-  margin: 0;
-  padding: 0;
-  border-bottom: 2px solid black;
-  text-align: center;
-}
-
-.card-text {
-  text-align: center;
 }
 
 .icon {
