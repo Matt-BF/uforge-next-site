@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { server } from '../../../config'
-
+import Card from '../../../components/Card'
 
 const product = ({ product }) => {
 
@@ -10,9 +10,9 @@ const product = ({ product }) => {
       <div>
         <p>{product.description}</p>
       </div>
-      <div>
-        Os produtos
-        {product.subproducts.map((subproduct, idx) => <p key={idx}>{subproduct.title}</p>)}
+      <h2>Os produtos</h2>
+      <div className="flex">
+        {product.subproducts.map((subproduct, idx) => <Card key={idx} title={subproduct.title} text={subproduct.description} />)}
       </div>
     </div>
   )
