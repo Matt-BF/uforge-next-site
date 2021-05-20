@@ -16,9 +16,16 @@ export const products = [
         "img":"",
         "description":"Lorem ipsum ladder",
         "subproducts":[{
-            "id":"2",
+            "id":"1",
             "title":"Ladder 100bp",
             "description":"100"
         }]
+    },
+    {
+        "id":"3",
+        "title":"Racks Magnéticas",
+        "img":"",
+        "description":"Racks magnéticas top da galáxia",
+        "subproducts":[]
     }
 ]
