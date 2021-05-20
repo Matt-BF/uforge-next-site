@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Footer = () => {
     return (
         <footer className={stylesFooter.footer}>
-            <div class={`container ${stylesFooter.footerFlex} grid`}>
+            <div className={`container ${stylesFooter.footerFlex} grid`}>
                 <div>
                     <p>Copyright &copy; 2021</p>
                 </div>
@@ -24,6 +24,9 @@ const Footer = () => {
                         </li>
                         <li>
                             <a href="mailto:mbfiamenghi@gmail.com"><i className={`${stylesFooter.footerLink} fas fa-at fa-2x`}></i></a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=+5519991300204"><i className={`${stylesFooter.footerLink} fab fa-whatsapp fa-2x`}></i></a>
                         </li>
                     </ul>
                 </nav>

@@ -1,23 +1,30 @@
-import {useRouter} from 'next/router'
-import {server} from '../../../config'
+import { useRouter } from 'next/router'
+import { server } from '../../../config'
 
 
-const product = ({product}) => {
+const product = ({ product }) => {
 
-    return (
-        <div>
-            <h1>{product.title}</h1> 
-        </div>
-    )
+  return (
+    <div>
+      <h1>{product.title}</h1>
+      <div>
+        <p>{product.description}</p>
+      </div>
+      <div>
+        Os produtos
+        {product.subproducts.map((subproduct, idx) => <p key={idx}>{subproduct.title}</p>)}
+      </div>
+    </div>
+  )
 }
 
 export const getStaticProps = async (context) => {
   const res = await fetch(`${server}/api/products/${context.params.id}`)
   const product = await res.json()
-  
+
   return {
     props: {
-     product,
+      product,
     },
   }
 }
@@ -27,7 +34,7 @@ export const getStaticPaths = async () => {
 
   const products = await res.json()
   const ids = products.map((product) => product.id)
-  
+
   const paths = ids.map((id) => ({ params: { id: id.toString() } }))
 
   return {
@@ -36,4 +43,4 @@ export const getStaticPaths = async () => {
   }
 }
 
-export default subproduct
+export default product
