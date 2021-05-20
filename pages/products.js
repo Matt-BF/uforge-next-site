@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import ProductList from '../components/ProductList'
+import { server } from '../config'
 
-
-const products = () => {
+const products = ({products}) => {
     return (
         <div>
             <Head>
@@ -13,9 +13,20 @@ const products = () => {
                     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
                     crossorigin="anonymous" />
             </Head>
-            <ProductList />
+            <ProductList products={products}/>
         </div>
     )
 }
+
+export const getStaticProps = async () => {
+    const res = await fetch(`${server}/api/products`)
+    const products = await res.json()
+  
+    return {
+      props: {
+        products,
+      },
+    }
+  }
 
 export default products

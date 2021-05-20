@@ -1,24 +1,25 @@
 .productContent {
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-  }
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  border: 2px solid var(--secondary-color);
+}
 
 .description {
-    text-align: center;
+  text-align: center;
 }
 
 .image {
-    align-self: center;
-    width: 40%;
+  align-self: center;
+  width: 40%;
 }
 
 .line {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .subproductList {
-    margin-left: 40px;
-    display: flex;
-    flex-direction: column;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
 }

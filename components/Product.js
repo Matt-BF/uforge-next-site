@@ -4,11 +4,10 @@ import { useState } from 'react'
 
 const Product = ({ product }) => {
     const [open, setOpen] = useState(false)
-
     return (
         <div>
-            <ButtonDropdown productTitle={product.productTitle} onClick={() => setOpen(open => !open)} />
-            {open && <Dropdown productImg={product.productImg} productDescription={product.productDescription} subproducts={product.subproducts} />}
+            <ButtonDropdown productTitle={product.title} onClick={() => setOpen(open => !open)} />
+            {open && <Dropdown product={product} />}
 
         </div>
     )
