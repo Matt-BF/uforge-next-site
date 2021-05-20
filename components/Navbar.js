@@ -9,21 +9,23 @@ const Navbar = () => {
                 <Link href='/'>
                     <a className={stylesNavbar.imgLink}>
                         <img src="uforge_full_navbar.png" alt="uForge">
-                    </img>
+                        </img>
                     </a>
-                    </Link>
+                </Link>
                 <nav>
                     <ul>
                         <li>
                             <Link href='/'>Home</Link>
                         </li>
-                        <li><a href="#">Produtos</a></li>
+                        <li>
+                            <Link href='/products'>Produtos</Link>
+                        </li>
                         <li><a href="#">Educação</a></li>
                     </ul>
                 </nav>
             </div>
-        
-    </>
+
+        </>
     )
 }
 

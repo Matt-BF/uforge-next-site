@@ -1,0 +1,42 @@
+.statementTitle {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+.container {
+    background-color: #fff;
+  }
+  
+.statementImg {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px;
+  }
+  
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .statementImg {
+    width: 30%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .statementImg {
+    width: 80%;
+  }
+
+}

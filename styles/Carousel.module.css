@@ -24,6 +24,7 @@
 
 @media (max-width: 1200px) {
   .carousel {
-    margin: 100px 0 0 0;
+    width: 60%;
+    margin: 50px 20%;
   }
 }
