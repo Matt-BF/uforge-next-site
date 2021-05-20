@@ -3,8 +3,7 @@ import Slider from '../components/Slider'
 import Infos from '../components/Infos'
 import Statements from '../components/Statements'
 
-
-function index() {
+const index = () => {
   return (
     <div>
       <Head>
