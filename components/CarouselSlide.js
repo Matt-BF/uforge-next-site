@@ -1,11 +1,17 @@
 import stylesCarousel from '../styles/Carousel.module.css'
-
-const CarouselSlide = ({text}) => {
+import Link from 'next/link'
+const CarouselSlide = ({ news }) => {
 
     return (
-        <div className={`${stylesCarousel.galleryCell}`}>
-            <p>{text}</p>
-        </div>
+        <Link href='/carousel/[id]' as={`/carousel/${news.id}`}>
+            <a className={`${stylesCarousel.galleryCell}`} >
+                <div >
+                    <p>{news.title}</p>
+                    <p>{news.text}</p>
+                </div>
+            </a>
+        </Link>
+
     )
 }
 

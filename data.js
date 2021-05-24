@@ -37,3 +37,24 @@ export const products = [
         "subproducts": []
     }
 ]
+
+export const allNews = [
+    {
+        "id": "1",
+        "backgroundImg": "",
+        "title": "Hello",
+        "text": " "
+    },
+    {
+        "id": "2",
+        "backgroundImg": "",
+        "title": "Second",
+        "text": "Lalala"
+    },
+    {
+        "id": "3",
+        "backgroundImg": "",
+        "title": "Thierry",
+        "text": "Cu de frango"
+    },
+]

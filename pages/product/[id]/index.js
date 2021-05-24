@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import { server } from '../../../config'
 import Card from '../../../components/Card'
 

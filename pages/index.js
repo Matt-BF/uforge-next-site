@@ -2,8 +2,10 @@ import Head from 'next/head'
 import Slider from '../components/Slider'
 import Infos from '../components/Infos'
 import Statements from '../components/Statements'
+import { server } from '../config'
 
-const index = () => {
+
+const index = ({ allNews }) => {
   return (
     <div>
       <Head>
@@ -15,13 +17,24 @@ const index = () => {
           crossOrigin="anonymous" />
       </Head>
 
-      <Slider />
+      <Slider allNews={allNews} />
 
       <Infos />
 
       <Statements />
     </div>
   )
+}
+
+export const getStaticProps = async () => {
+  const res = await fetch(`${server}/api/carouselNews`)
+  const allNews = await res.json()
+
+  return {
+    props: {
+      allNews,
+    },
+  }
 }
 
 export default index

@@ -4,11 +4,12 @@ import CarouselArrow from './CarouselArrow'
 import { useState, useEffect, useRef } from 'react';
 
 
-const Slider = () => {
+const Slider = ({ allNews }) => {
 
     const [currentSlide, setCurrentSlide] = useState(0)
-    const slides = useState(["Hello", "Number two", "Cu de frango"])
-    const { length } = slides
+
+    const { length } = allNews
+    console.log(allNews)
     const idRef = useRef();
 
     useEffect(() => {
@@ -21,17 +22,18 @@ const Slider = () => {
     })
 
     const goToNextSlide = () => {
-        setCurrentSlide(currentSlide === length ? 0 : currentSlide + 1)
+        setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1)
 
     }
 
     const goToPreviousSlide = () => {
-        setCurrentSlide(currentSlide === 0 ? length : currentSlide - 1)
+        setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1)
 
     }
 
     const onClick = (e) => {
         e === "next" ? goToNextSlide() : goToPreviousSlide()
+        console.log(currentSlide)
         clearTimeout(idRef.current)
 
     }
@@ -43,7 +45,7 @@ const Slider = () => {
             />
 
 
-            <CarouselSlide text={slides[0][currentSlide]} />
+            <CarouselSlide news={allNews[currentSlide]} />
 
             <CarouselArrow direction="right"
                 onClick={() => onClick("next")}
