@@ -9,7 +9,7 @@ const Slider = ({ allNews }) => {
     const [currentSlide, setCurrentSlide] = useState(0)
 
     const { length } = allNews
-    console.log(allNews)
+
     const idRef = useRef();
 
     useEffect(() => {
@@ -33,7 +33,7 @@ const Slider = ({ allNews }) => {
 
     const onClick = (e) => {
         e === "next" ? goToNextSlide() : goToPreviousSlide()
-        console.log(currentSlide)
+
         clearTimeout(idRef.current)
 
     }
