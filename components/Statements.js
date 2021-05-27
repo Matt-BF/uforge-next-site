@@ -1,23 +1,39 @@
-import stylesStatements from '../styles/Statements.module.css'
+import stylesStatements from "../styles/Statements.module.css";
 
 const Statements = () => {
-    return (
-        <div>
-            <h1 className={stylesStatements.statementTitle}>Conquistas</h1>
-            <div className={`${stylesStatements.container} ${stylesStatements.flex}`}>
-                <img className={stylesStatements.statementImg} src="logo_foxes_peq.png" alt="FoxES" />
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequuntur ea labore fuga vel vitae
-                nihil corporis expedita quasi aperiam officia, odio iure, facere eligendi fugit nemo alias aliquam
-                provident tempora repellat dolores repudiandae esse id voluptas? At deserunt neque sunt accusamus
-                repudiandae corporis? Quam mollitia consequuntur officiis deserunt nostrum, architecto quaerat id
-                numquam quidem et ipsa saepe cupiditate sit, consectetur culpa, ea harum labore fuga nihil. Libero
-                repellendus nesciunt, magni deleniti reiciendis dolor praesentium debitis. Cupiditate ad commodi nihil,
-                eligendi exercitationem delectus iste labore aliquid, est doloribus nemo consectetur sunt officiis
-                repudiandae praesentium earum, porro eius aliquam placeat aspernatur.</p>
-            </div>
+  return (
+    <div>
+      <h1 className={stylesStatements.statementTitle}>Conquistas</h1>
+      <div className={`${stylesStatements.container} ${stylesStatements.grid}`}>
+        <div className={stylesStatements.wrapperDiv}>
+          <img
+            className={stylesStatements.statementFoxes}
+            src="logo_foxes_peq.png"
+            alt="FoxES"
+          />
         </div>
+        <div className={stylesStatements.wrapperDiv}>
+          <p className={stylesStatements.statementParagraph}>
+            "Um produto nacional? Para testar no meio de uma pandemia?
+            Justamente para detectar o coronavírus? Nunca estive tão feliz de
+            ter aceito uma amostra grátis. 100 mil exames depois, ainda usando
+            seu kit de extração, só podemos agradecer à Micro-Forge pela
+            incrível parceria! Muito sucesso!"
+          </p>
+          <p className={stylesStatements.statementParagraph}>
+            - Roni Moreira, Diretor Comercial da FoxES
+          </p>
+        </div>
+        <div className={stylesStatements.wrapperDiv}>
+          <img
+            className={stylesStatements.statementRoni}
+            src="ronivaldo.jpg"
+            alt="Roni Moreira"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
-    )
-}
-
-export default Statements
+export default Statements;
