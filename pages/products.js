@@ -1,5 +1,5 @@
 import Head from "next/head";
-import FluxGroup from "../components/FluxGroup";
+import FluxesList from "../components/FluxesList";
 import { server } from "../config";
 
 const products = ({ fluxes }) => {
@@ -17,7 +17,7 @@ const products = ({ fluxes }) => {
         />
       </Head>
       <h1 style={{ marginLeft: "50px" }}>Confira nosso fluxograma!</h1>
-      <FluxGroup fluxes={fluxes} />
+      <FluxesList fluxes={fluxes} />
     </div>
   );
 };

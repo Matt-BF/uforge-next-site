@@ -1,6 +1,5 @@
 import stylesDropdown from "../styles/Dropdown.module.css";
 import Link from "next/link";
-import Flux from "./FluxesList";
 
 const Dropdown = ({ flux }) => {
   return (

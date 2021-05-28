@@ -1,17 +1,17 @@
 import Link from "next/link";
 import Dropdown from "./Dropdown";
 import ButtonDropdown from "./ButtonDropdown";
+import { useState } from "react";
 
-const FluxGroup = ({ fluxes }) => {
+const FluxGroup = ({ flux }) => {
+  const [open, setOpen] = useState(false);
   return (
     <div>
-      <div>
-        {fluxes.map((flux, idx) => (
-          <ButtonDropdown fluxTitle={flux.title}>
-            <Dropdown flux={flux}></Dropdown>
-          </ButtonDropdown>
-        ))}
-      </div>
+      <ButtonDropdown
+        onClick={() => setOpen((open) => !open)}
+        fluxTitle={flux.title}
+      />
+      {open && <Dropdown flux={flux} />}
     </div>
   );
 };
