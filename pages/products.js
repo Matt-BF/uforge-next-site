@@ -1,8 +1,8 @@
 import Head from "next/head";
-import ProductList from "../components/ProductList";
+import FluxGroup from "../components/FluxGroup";
 import { server } from "../config";
 
-const products = ({ products }) => {
+const products = ({ fluxes }) => {
   return (
     <div>
       <Head>
@@ -17,18 +17,18 @@ const products = ({ products }) => {
         />
       </Head>
       <h1 style={{ marginLeft: "50px" }}>Confira nosso fluxograma!</h1>
-      <ProductList products={products} />
+      <FluxGroup fluxes={fluxes} />
     </div>
   );
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/products`);
-  const products = await res.json();
+  const res = await fetch(`${server}/api/fluxes`);
+  const fluxes = await res.json();
 
   return {
     props: {
-      products,
+      fluxes,
     },
   };
 };

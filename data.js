@@ -1,43 +1,28 @@
-export const products = [
+export const fluxes = [
   {
     id: "1",
-    title: "Diagnósticos Clínicos",
-    excerpt: "Lorem ipsum beads sabia",
-    description: "Lorem lalalallala",
-    subproducts: [
+    title: "Sequenciamento",
+    description: "Fluxograma para sequenciamento",
+    items: [
       {
         id: "1",
-        title: "Kit Sabiá Leveduras",
-        description: "levedura",
+        title: "Extração",
+        description:
+          "Nosso fluxo de sequenciamento engloba produtos para extração, PCR e Sequenciamento",
+        img: "",
+        products: [
+          { id: "1", title: "Kit Sabiá Amostras Limpas" },
+          { id: "2", title: "Kit Sabiá Levedura" },
+          { id: "3", title: "Kit Sabiá Gel de Agarose" },
+        ],
       },
       {
         id: "2",
-        title: "Kit Sabiá Amostras Limpas",
-        description: "Amostra limpas",
+        title: "PCR",
+        img: "",
+        products: [],
       },
     ],
-  },
-  {
-    id: "2",
-    title: "Ladder",
-    img: "",
-    excerpt: "texto curtinho",
-    description: "Lorem ipsum ladder",
-    subproducts: [
-      {
-        id: "1",
-        title: "Ladder 100bp",
-        description: "100",
-      },
-    ],
-  },
-  {
-    id: "3",
-    title: "Racks Magnéticas",
-    img: "",
-    excerpt: "Racks magnéticas top da galáxia",
-    description: "",
-    subproducts: [],
   },
 ];
 

@@ -1,19 +1,14 @@
-import stylesDropdown from '../styles/Dropdown.module.css'
-import Link from 'next/link'
+import stylesDropdown from "../styles/Dropdown.module.css";
+import Link from "next/link";
+import Flux from "./FluxesList";
 
-const Dropdown = ({ product }) => {
-    return (
-        <div className={`${stylesDropdown.productContent} grid-2`}>
-            <img className={stylesDropdown.image} src={product.img} alt="" />
-            <p className={stylesDropdown.description}>{product.excerpt}</p>
-            {product.subproducts.length > 0 &&
-                <Link href='/product/[id]' as={`/product/${product.id}`}>
-                    <a style={{ "color": "var(--primary-color)" }}> Conheça a Linha!</a>
-                </Link>}
+const Dropdown = ({ flux }) => {
+  return (
+    <div className={`${stylesDropdown.productContent} grid-2`}>
+      <img className={stylesDropdown.image} src={product.img} alt="" />
+      <p className={stylesDropdown.description}>{flux.description}</p>
+    </div>
+  );
+};
 
-        </div>
-
-    )
-}
-
-export default Dropdown
+export default Dropdown;

@@ -1,12 +1,15 @@
-import stylesButtonDropdown from '../styles/ButtonDropdown.module.css'
+import stylesButtonDropdown from "../styles/ButtonDropdown.module.css";
 
-const ButtonDropdown = ({ onClick, productTitle }) => {
-    return (
-        <button onClick={onClick} type="button" className={stylesButtonDropdown.collapsible}>
-            <p>{productTitle}</p>
-        </button>
+const ButtonDropdown = ({ onClick, fluxTitle }) => {
+  return (
+    <button
+      onClick={onClick}
+      type="button"
+      className={stylesButtonDropdown.collapsible}
+    >
+      <p>{fluxTitle}</p>
+    </button>
+  );
+};
 
-    )
-}
-
-export default ButtonDropdown
+export default ButtonDropdown;
