@@ -16,20 +16,26 @@ const Infos = () => {
       <div className={`${stylesInfos.flexGrid}`}>
         <Card
           title={<i className="fas fa-flask icon"></i>}
-          subtitle="Prazerosa para quem faz"
-          text="Como doutorandos e ex-alunos da UNICAMP, sabemos em primeira
-          mão as dificuldades dos nossos cientistas com produtos que não atendem
-          as demandas ou as expectativas"
+          subtitle="Prazer em ser cientista"
+          text="Viver na fronteira do conhecimento é ao mesmo
+          tempo recompensante e desafiador.
+          Tornamos os preparativos para sua experimentação simples
+          pra você focar no que importa: a verdade"
         />
         <Card
           title={<i className="fas fa-users icon"></i>}
-          subtitle="Encantadora para quem vive"
-          text=""
+          subtitle="A comunidade"
+          text="Absolutamente tudo que facilita nossas vidas tem
+          um pouquinho de ciência. Com cientistas mais felizes, a
+          sociedade progride mais rapidamente e a vida fica mais simples
+          e melhor de ser vivida."
         />
         <Card
           title={<i className="fas fa-seedling icon"></i>}
           subtitle="Biorreverente"
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nesciunt porro illum, asperiores omnis, molestiae tempora mollitia eaque labore laudantium sit quae error corporis. Eveniet culpa eos porro tenetur natus."
+          text="Podemos viver muito bem por pouco tempo fazendo o básico.
+          Ou podemos fazer muito bem o que precisa ser feito para viver
+          muito bem por muito tempo. Simples assim."
         />
       </div>
     </div>
