@@ -2,6 +2,32 @@ export const fluxes = [
   {
     id: "1",
     title: "Sequenciamento",
+    description:
+      "Nosso fluxo de sequenciamento engloba produtos para extração, PCR e Sequenciamento",
+    items: [
+      {
+        id: "1",
+        title: "Extração",
+        description:
+          "O Kit Sabiá possui soluções para muitos tipos de amostras!",
+        img: "",
+        products: [
+          { id: "1", title: "Kit Sabiá Amostras Limpas" },
+          { id: "2", title: "Kit Sabiá Levedura" },
+          { id: "3", title: "Kit Sabiá Gel de Agarose" },
+        ],
+      },
+      {
+        id: "2",
+        title: "PCR",
+        img: "",
+        products: [],
+      },
+    ],
+  },
+  {
+    id: "2",
+    title: "Segundo fluxo",
     description: "Fluxograma para sequenciamento",
     items: [
       {
