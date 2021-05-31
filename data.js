@@ -57,18 +57,21 @@ export const allNews = [
     id: "1",
     backgroundImg: "",
     title: "Hello",
+    excerpt: " ",
     text: " ",
   },
   {
     id: "2",
     backgroundImg: "",
     title: "Second",
+    excerpt: " ",
     text: "Lalala",
   },
   {
     id: "3",
     backgroundImg: "",
     title: "Thierry",
+    excerpt: " ",
     text: "Cu de frango",
   },
 ];
