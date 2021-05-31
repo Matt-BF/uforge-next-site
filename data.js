@@ -37,7 +37,7 @@ export const fluxes = [
           "Nosso fluxo de sequenciamento engloba produtos para extração, PCR e Sequenciamento",
         img: "",
         products: [
-          { id: "1", title: "Kit Sabiá Amostras Limpas" },
+          { id: "1", title: "Kit blabla" },
           { id: "2", title: "Kit Sabiá Levedura" },
           { id: "3", title: "Kit Sabiá Gel de Agarose" },
         ],
