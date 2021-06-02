@@ -2,7 +2,7 @@
   max-width: 30%;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border: solid var(--tertiary-color) 1px;
   padding: 5px 20px 10px;
   margin: 10px;
   color: black;
@@ -10,7 +10,7 @@
 }
 
 .card:hover {
-  transform: scale(1.05);
+  border-color: var(--secondary-color);
   transition: 0.2s;
 }
 
@@ -18,10 +18,13 @@
   margin: 0;
   padding: 0;
   text-align: left;
+  color: var(--primary-color);
 }
 
 .cardText {
   text-align: left;
+  font-size: 14px;
+  margin: 5px 0 0 0;
 }
 
 @media (max-width: 1200px) {
