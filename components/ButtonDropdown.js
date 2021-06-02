@@ -7,7 +7,7 @@ const ButtonDropdown = ({ onClick, fluxTitle }) => {
       type="button"
       className={stylesButtonDropdown.collapsible}
     >
-      <p>{fluxTitle}</p>
+      <h2>{fluxTitle}</h2>
     </button>
   );
 };

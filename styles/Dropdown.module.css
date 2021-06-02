@@ -2,7 +2,8 @@
   display: flex;
   width: 80%;
   flex-direction: column;
-  border: 2px solid var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
 }
 
 .description {
