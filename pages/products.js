@@ -1,8 +1,7 @@
 import Head from "next/head";
-import FluxesList from "../components/FluxesList";
 import { server } from "../config";
 
-const products = ({ fluxes }) => {
+const products = ({}) => {
   return (
     <div>
       <Head>
@@ -20,16 +19,4 @@ const products = ({ fluxes }) => {
     </div>
   );
 };
-
-export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/fluxes`);
-  const fluxes = await res.json();
-
-  return {
-    props: {
-      fluxes,
-    },
-  };
-};
-
 export default products;
