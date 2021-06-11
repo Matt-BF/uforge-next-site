@@ -26,9 +26,9 @@ const Statements = () => {
         </div>
         <div className={stylesStatements.wrapperDiv}>
           <img
-            className={stylesStatements.statementRoni}
-            src="ronivaldo.jpg"
-            alt="Roni Moreira"
+            className={stylesStatements.statementBeads}
+            src="beads_promega_rack.png"
+            alt="beads"
           />
         </div>
       </div>

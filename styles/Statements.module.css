@@ -12,6 +12,7 @@
 
 .container {
   background-color: #fff;
+  padding-bottom: 20px;
 }
 
 .statementFoxes {
@@ -23,9 +24,8 @@
   text-align: justify;
 }
 
-.statementRoni {
+.statementBeads {
   width: 50%;
-  margin: 10px 0;
   border-radius: 50%;
 }
 
