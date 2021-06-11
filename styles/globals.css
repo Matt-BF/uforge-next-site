@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap");
 
 :root {
-  --primary-color: #278980;
-  --secondary-color: #2bbcb2;
-  --tertiary-color: #c5c8c4;
+  --primary-color: #154247;
+  --secondary-color: #278980;
+  --tertiary-color: #2bbcb2;
+  --quaternary-color: #c5c8c4;
 }
 
 * {
@@ -158,6 +159,11 @@ img {
   color: #fff;
 }
 
+.bg-navbar {
+  background-color: var(--navbar-color);
+  color: #fff;
+}
+
 .bg-secondary {
   background-color: var(--secondary-color);
   color: #fff;
@@ -189,6 +195,6 @@ img {
 
 .icon {
   font-size: 40px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin: 10px 0;
 }
