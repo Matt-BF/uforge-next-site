@@ -42,7 +42,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://api.whatsapp.com/send?phone=+5519991300204">
+              <a href="https://api.whatsapp.com/send?phone=+5519994043951">
                 <i
                   className={`${stylesFooter.footerLink} fab fa-whatsapp fa-2x`}
                 ></i>
