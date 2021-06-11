@@ -55,23 +55,18 @@ export const fluxes = [
 export const allNews = [
   {
     id: "1",
-    backgroundImg: "",
-    title: "Hello",
-    excerpt: " ",
+    title: "Estamos na Liga Brasileira de Bioinformática!",
+    excerpt: "Confira nosso post de apresentação",
     text: " ",
+    link: "https://www.instagram.com/p/CP69pGipI8w/?utm_source=ig_web_copy_link",
   },
+
   {
-    id: "2",
-    backgroundImg: "",
-    title: "Second",
-    excerpt: " ",
-    text: "Lalala",
-  },
-  {
-    id: "3",
-    backgroundImg: "",
-    title: "Thierry",
-    excerpt: " ",
-    text: "Cu de frango",
+    id: "1",
+    title:
+      "Nossa seção de produtos vai ser diferente de tudo o que você já viu",
+    excerpt: "Visite a aba de produtos a partir de 20/06",
+    text: " ",
+    link: "/products",
   },
 ];

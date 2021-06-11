@@ -16,8 +16,7 @@ const products = ({ fluxes }) => {
           crossOrigin="anonymous"
         />
       </Head>
-      <h2 style={{ marginLeft: "50px" }}>Confira nosso fluxograma!</h2>
-      <FluxesList fluxes={fluxes} />
+      <h2 style={{ marginLeft: "50px" }}>Em construção!</h2>
     </div>
   );
 };

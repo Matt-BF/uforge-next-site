@@ -2,8 +2,12 @@ import stylesCarousel from "../styles/Carousel.module.css";
 import Link from "next/link";
 const CarouselSlide = ({ news }) => {
   return (
-    <Link href="/carousel/[id]" as={`/carousel/${news.id}`}>
-      <a className={`${stylesCarousel.galleryCell}`}>
+    <Link href={news.link} as={news.link}>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        className={`${stylesCarousel.galleryCell}`}
+      >
         <div>
           <p>{news.title}</p>
           <p>{news.excerpt}</p>
