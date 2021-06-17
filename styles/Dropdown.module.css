@@ -1,26 +1,8 @@
-.productContent {
-  display: flex;
+.dropdown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: 80%;
-  flex-direction: column;
+  margin-left: 50px;
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
-}
-
-.description {
-  text-align: center;
-}
-
-.image {
-  align-self: center;
-  width: 40%;
-}
-
-.line {
-  margin-left: 10px;
-}
-
-.subproductList {
-  margin-left: 40px;
-  display: flex;
-  flex-direction: column;
 }

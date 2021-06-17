@@ -1,7 +1,59 @@
 import Head from "next/head";
-import { server } from "../config";
+import FluxGroup from "../components/FluxGroup";
 
 const products = ({}) => {
+  const fluxes = [
+    {
+      id: "1",
+      fluxTitle: "PCR",
+      fluxComponents: [
+        {
+          id: "1",
+          componentName: "Extração",
+          componentImg: "extraction.jpg",
+          componentProducts: ["Linha Sabiá"],
+        },
+        {
+          id: "2",
+          componentName: "PCR",
+          componentImg: "pcr.jpg",
+          componentProducts: [],
+        },
+        {
+          id: "3",
+          componentName: "Eletroforese",
+          componentImg: "gel.jpg",
+          componentProducts: ["Linha Sabiá"],
+        },
+        {
+          id: "4",
+          componentName: "RT-qPCR",
+          componentImg: "rtpcr.jpg",
+          componentProducts: [],
+        },
+      ],
+    },
+  ];
+
+  const products = [
+    {
+      id: "1",
+      productName: "Linha Sabiá",
+      productSubproducts: [
+        {
+          id: "1",
+          subproductName: "Kit Amostras Limpas",
+          subproductPrice: "R$2500",
+        },
+        {
+          id: "2",
+          subproductName: "Kit Levedura",
+          subproductPrice: "R$2800",
+        },
+      ],
+    },
+  ];
+
   return (
     <div>
       <Head>
@@ -15,7 +67,14 @@ const products = ({}) => {
           crossOrigin="anonymous"
         />
       </Head>
-      <h2 style={{ marginLeft: "50px" }}>Em construção!</h2>
+      <h2 style={{ marginLeft: "50px" }}>
+        Escolha um fluxo para ver nossos produtos disponíveis
+      </h2>
+      <div>
+        {fluxes.map((flux) => (
+          <FluxGroup key={flux.id} flux={flux} />
+        ))}
+      </div>
     </div>
   );
 };

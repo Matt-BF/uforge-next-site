@@ -11,7 +11,7 @@ const Slider = ({ allNews }) => {
   const idRef = useRef();
 
   useEffect(() => {
-    const timeout = setTimeout(goToNextSlide, 3000);
+    const timeout = setTimeout(goToNextSlide, 5000);
     idRef.current = timeout;
 
     return () => {

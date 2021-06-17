@@ -1,14 +1,11 @@
 .collapsible {
-  background-color: #fff;
+  background-color: var(--secondary-color);
   cursor: pointer;
   padding: 18px;
   width: 80%;
-  border: solid var(--tertiary-color) 1px;
+  border: solid var(--secondary-color) 1px;
   border-radius: 10px;
   text-align: left;
-  color: var(--primary-color);
-}
-
-.collapsible:hover {
-  border-color: var(--secondary-color);
+  color: #fff;
+  margin-left: 50px;
 }
