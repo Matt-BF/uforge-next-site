@@ -15,16 +15,18 @@ const blog = ({ mediumPosts }) => {
           crossOrigin="anonymous"
         />
       </Head>
-      <h2 style={{ margin: "50px" }}>Confira nossos posts no Medium!</h2>
+      <div style={{ margin: "50px" }}>
+        <h2>Confira nossos posts no Medium!</h2>
 
-      {mediumPosts.items.map((post, idx) => (
-        <BlogCard
-          key={idx}
-          link={post.guid}
-          title={post.title}
-          date={post.pubDate.split(" ")[0]}
-        />
-      ))}
+        {mediumPosts.items.map((post, idx) => (
+          <BlogCard
+            key={idx}
+            link={post.guid}
+            title={post.title}
+            date={post.pubDate.split(" ")[0]}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -4,10 +4,9 @@
   border-radius: 10px;
   border: solid var(--quaternary-color) 1px;
   padding: 5px 20px 10px;
-  margin: 10px;
+  margin-top: 30px;
   color: black;
   transition: 0.2s ease-out;
-  margin-left: 50px;
   margin-bottom: 30px;
 }
 
