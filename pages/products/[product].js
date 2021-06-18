@@ -19,20 +19,24 @@ const product = ({ product }) => {
       </Head>
       <div className={stylesProductPage.container}>
         <h2>{product.productName}</h2>
-        <p>{product.productDescription}</p>
+        <p style={{ marginBottom: "30px", textAlign: "justify" }}>
+          {product.productDescription}
+        </p>
         <img
           className={stylesProductPage.productImg}
           src={product.productImg}
           alt=""
         />
-        <h2>Nossos kits</h2>
-        <div className={stylesProductPage.subproducts}>
-          {product.productSubproducts.map((subproduct) => (
-            <SubproductCard
-              key={subproduct.id}
-              subproduct={subproduct}
-            ></SubproductCard>
-          ))}
+        <div className={stylesProductPage.subproductsContainer}>
+          <h1>Nossos kits</h1>
+          <div className={stylesProductPage.subproducts}>
+            {product.productSubproducts.map((subproduct) => (
+              <SubproductCard
+                key={subproduct.id}
+                subproduct={subproduct}
+              ></SubproductCard>
+            ))}
+          </div>
         </div>
       </div>
     </div>

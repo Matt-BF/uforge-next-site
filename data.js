@@ -36,7 +36,11 @@ export const products = [
     id: "1",
     productName: "Linha Sabiá",
     productDescription:
-      "A Linha Sabiá compõe kits de extração por beads magnéticas",
+      "A Linha Sabiá compõe kits de extração de ácidos nucleicos (DNA e RNA) por beads magnéticas para diversos organismos.\
+      Tem como premissa a captura magnética dos ácidos nucleicos, que se ligam nas beads por conta de diferença de cargas\
+      elétricas. Dentre suas vantagens sobre outros métodos de extração, destacamos a velocidade dos protocolos\
+      (variando de 20 minutos a 1 hora), extração de quantidades diminutas de DNA ou RNA (para aplicações forenses ou\
+      amostras degradadas por exemplo) e uso de reagentes pouco tóxicos (contrastando com extrações como de Fenol-Clorofórmio).",
     productImg: "/beads_promega_rack.png",
     productSubproducts: [
       {

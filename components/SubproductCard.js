@@ -14,8 +14,8 @@ const SubproductCard = ({ subproduct }) => {
 
       <p className={stylesCard.cardText}>
         Testado para: <br />
-        {subproduct.subproductTests.map((test) => (
-          <span>
+        {subproduct.subproductTests.map((test, idx) => (
+          <span key={idx}>
             &bull; {test}
             <br />
           </span>
