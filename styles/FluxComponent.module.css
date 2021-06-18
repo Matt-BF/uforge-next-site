@@ -13,3 +13,7 @@
   width: 40%;
   opacity: 0.4;
 }
+
+.productLink:hover {
+  border-bottom: 2px black solid;
+}

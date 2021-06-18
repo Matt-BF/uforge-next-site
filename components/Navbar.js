@@ -6,16 +6,16 @@ const Navbar = () => {
     <>
       <div className={`${stylesNavbar.navbar} ${stylesNavbar.flex} bg-primary`}>
         <img
-          src="nav-right.jpeg"
+          src="/nav-right.jpeg"
           className={stylesNavbar.sideImgLeft}
           alt=""
         ></img>
-        <img src="br_logo.jpeg" className={stylesNavbar.brImg} alt=""></img>
+        <img src="/br_logo.jpeg" className={stylesNavbar.brImg} alt=""></img>
         <Link href="/">
           <a className={stylesNavbar.imgLink}>
             <img
               className={stylesNavbar.mainImg}
-              src="uforge_full_navbar.png"
+              src="/uforge_full_navbar.png"
               alt="uForge"
             ></img>
           </a>
@@ -34,7 +34,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <img
-          src="nav-left.jpeg"
+          src="/nav-left.jpeg"
           className={stylesNavbar.sideImgRight}
           alt=""
         ></img>

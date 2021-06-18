@@ -19,6 +19,11 @@ const product = ({ product }) => {
       <div className={stylesProductPage.container}>
         <h2>{product.productName}</h2>
         <p>{product.productDescription}</p>
+        <img
+          className={stylesProductPage.productImg}
+          src={`../${product.productImg}`}
+          alt=""
+        />
       </div>
     </div>
   );

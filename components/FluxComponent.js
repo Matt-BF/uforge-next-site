@@ -38,7 +38,9 @@ const FluxComponent = ({ component }) => {
                 query: { product: componentProduct },
               }}
             >
-              <a>{componentProduct}</a>
+              <a className={stylesFluxComponent.productLink}>
+                {componentProduct}
+              </a>
             </Link>
           ))}
         </div>
