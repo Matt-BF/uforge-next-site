@@ -35,25 +35,6 @@ const products = ({}) => {
     },
   ];
 
-  const products = [
-    {
-      id: "1",
-      productName: "Linha Sabiá",
-      productSubproducts: [
-        {
-          id: "1",
-          subproductName: "Kit Amostras Limpas",
-          subproductPrice: "R$2500",
-        },
-        {
-          id: "2",
-          subproductName: "Kit Levedura",
-          subproductPrice: "R$2800",
-        },
-      ],
-    },
-  ];
-
   return (
     <div>
       <Head>

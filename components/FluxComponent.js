@@ -6,24 +6,6 @@ import Link from "next/link";
 const FluxComponent = ({ component }) => {
   const [open, setOpen] = useState(false);
 
-  const products = [
-    {
-      id: "1",
-      productName: "Linha Sabiá",
-      productSubproducts: [
-        {
-          id: "1",
-          subproductName: "Kit Amostras Limpas",
-          subproductPrice: "R$2500",
-        },
-        {
-          id: "2",
-          subproductName: "Kit Levedura",
-          subproductPrice: "R$2800",
-        },
-      ],
-    },
-  ];
   return (
     <div
       className={stylesFluxComponent.componentGroup}
@@ -50,7 +32,12 @@ const FluxComponent = ({ component }) => {
       {open && (
         <div>
           {component.componentProducts.map((componentProduct) => (
-            <Link href={`/products/${componentProduct}`}>
+            <Link
+              href={{
+                pathname: "/products/[product]",
+                query: { product: componentProduct },
+              }}
+            >
               <a>{componentProduct}</a>
             </Link>
           ))}

@@ -5,8 +5,8 @@ import Link from "next/link";
 const Dropdown = ({ flux }) => {
   return (
     <div className={stylesDropdown.dropdown}>
-      {flux.fluxComponents.map((component) => (
-        <FluxComponent component={component} />
+      {flux.fluxComponents.map((component, idx) => (
+        <FluxComponent key={idx} component={component} />
       ))}
     </div>
   );

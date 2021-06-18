@@ -1,52 +1,18 @@
-export const fluxes = [
+export const products = [
   {
     id: "1",
-    title: "Sequenciamento",
-    description:
-      "Nosso fluxo de sequenciamento engloba produtos para extração, PCR e Sequenciamento",
-    items: [
+    productName: "Linha Sabiá",
+    productDescription: "Lorem ipsum dolor sit amet",
+    productSubproducts: [
       {
         id: "1",
-        title: "Extração",
-        description:
-          "O Kit Sabiá possui soluções para muitos tipos de amostras!",
-        img: "",
-        products: [
-          { id: "1", title: "Kit Sabiá Amostras Limpas" },
-          { id: "2", title: "Kit Sabiá Levedura" },
-          { id: "3", title: "Kit Sabiá Gel de Agarose" },
-        ],
+        subproductName: "Kit Amostras Limpas",
+        subproductPrice: "R$2500",
       },
       {
         id: "2",
-        title: "PCR",
-        img: "",
-        products: [],
-      },
-    ],
-  },
-  {
-    id: "2",
-    title: "Segundo fluxo",
-    description: "Fluxograma para sequenciamento",
-    items: [
-      {
-        id: "1",
-        title: "Extração",
-        description:
-          "Nosso fluxo de sequenciamento engloba produtos para extração, PCR e Sequenciamento",
-        img: "",
-        products: [
-          { id: "1", title: "Kit blabla" },
-          { id: "2", title: "Kit Sabiá Levedura" },
-          { id: "3", title: "Kit Sabiá Gel de Agarose" },
-        ],
-      },
-      {
-        id: "2",
-        title: "PCR",
-        img: "",
-        products: [],
+        subproductName: "Kit Levedura",
+        subproductPrice: "R$2800",
       },
     ],
   },
