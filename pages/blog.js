@@ -1,5 +1,4 @@
 import Head from "next/head";
-import stylesBlog from "../styles/Blog.module.css";
 import BlogCard from "../components/BlogCard";
 
 const blog = ({ mediumPosts }) => {
