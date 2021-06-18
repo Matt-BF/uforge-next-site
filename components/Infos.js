@@ -33,9 +33,9 @@ const Infos = () => {
         <Card
           title={<i className="fas fa-seedling icon"></i>}
           subtitle="Biorreverente"
-          text="Podemos viver muito bem por pouco tempo fazendo o básico.
-          Ou podemos fazer muito bem o que precisa ser feito para viver
-          muito bem por muito tempo. Simples assim."
+          text="Temos como objetivo cuidar, zelar e respeitar tudo o que tem vida.
+          Dessa maneira, mantemos o equilíbrio, a qualidade e a continuidade do que é nosso. 
+          Simples assim."
         />
       </div>
     </div>
