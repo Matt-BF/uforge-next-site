@@ -3,7 +3,7 @@ export const products = [
     id: "1",
     productName: "Linha Sabiá",
     productDescription: "Lorem ipsum dolor sit amet",
-    productImg: "beads_promega_rack.png",
+    productImg: "/beads_promega_rack.png",
     productSubproducts: [
       {
         id: "1",

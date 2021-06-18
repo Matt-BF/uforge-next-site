@@ -21,7 +21,7 @@ const product = ({ product }) => {
         <p>{product.productDescription}</p>
         <img
           className={stylesProductPage.productImg}
-          src={`../${product.productImg}`}
+          src={product.productImg}
           alt=""
         />
       </div>
