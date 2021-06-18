@@ -8,4 +8,9 @@
 .productImg {
   width: 30%;
   align-self: center;
+  margin-bottom: 80px;
+}
+
+.subproducts {
+  display: flex;
 }

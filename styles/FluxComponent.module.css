@@ -14,6 +14,10 @@
   opacity: 0.4;
 }
 
+.productLink {
+  color: var(--primary-color);
+}
+
 .productLink:hover {
-  border-bottom: 2px black solid;
+  border-bottom: 2px var(--secondary-color) solid;
 }

@@ -1,14 +1,11 @@
 .card {
-  max-width: 30%;
   background-color: #fff;
   border-radius: 10px;
   border: solid var(--quaternary-color) 1px;
   padding: 5px 20px 10px;
-  margin: 10px;
+  margin: 30px;
   color: black;
   transition: 0.2s ease-out;
-  margin-left: 50px;
-  margin-bottom: 30px;
 }
 
 .card:hover {
@@ -17,16 +14,15 @@
 }
 
 .cardTitle {
-  margin: 0;
+  margin: 0 0 30px 0;
   padding: 0;
-  text-align: left;
+  text-align: center;
   color: var(--primary-color);
 }
 
 .cardText {
   text-align: left;
-  font-size: 14px;
-  margin: 5px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 @media (max-width: 1200px) {

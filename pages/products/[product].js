@@ -1,6 +1,7 @@
 import stylesProductPage from "../../styles/ProductPage.module.css";
 import { products } from "../../data";
 import Head from "next/head";
+import SubproductCard from "../../components/SubproductCard";
 
 const product = ({ product }) => {
   return (
@@ -24,6 +25,15 @@ const product = ({ product }) => {
           src={product.productImg}
           alt=""
         />
+        <h2>Nossos kits</h2>
+        <div className={stylesProductPage.subproducts}>
+          {product.productSubproducts.map((subproduct) => (
+            <SubproductCard
+              key={subproduct.id}
+              subproduct={subproduct}
+            ></SubproductCard>
+          ))}
+        </div>
       </div>
     </div>
   );
