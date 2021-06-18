@@ -9,3 +9,7 @@
   color: #fff;
   margin-left: 50px;
 }
+
+.collapsible:focus {
+  outline: 0;
+}

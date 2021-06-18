@@ -6,12 +6,20 @@ const SubproductCard = ({ subproduct }) => {
       <h2 className={stylesCard.cardTitle}>{subproduct.subproductName}</h2>
       <p className={stylesCard.cardText}>
         Preço do Kit: {subproduct.subproductPrice}
-      </p>
-      <p className={stylesCard.cardText}>
+        <br />
         Número de reações: {subproduct.subproductSize}
-      </p>
-      <p className={stylesCard.cardText}>
+        <br />
         Preço por reação: {subproduct.subproductPriceSample}
+      </p>
+
+      <p className={stylesCard.cardText}>
+        Testado para: <br />
+        {subproduct.subproductTests.map((test) => (
+          <span>
+            &bull; {test}
+            <br />
+          </span>
+        ))}
       </p>
     </div>
   );

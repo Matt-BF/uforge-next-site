@@ -42,6 +42,12 @@ export const products = [
       {
         id: "1",
         subproductName: "Kit Amostras Limpas",
+        subproductTests: [
+          "Saliva",
+          "Swab Nasal/Orofaríngeo",
+          "DNA livre em amostras de solo",
+          "DNA livre em amostras de água",
+        ],
         subproductPrice: "R$2500",
         subproductSize: "250 amostras",
         subproductPriceSample: "R$10",
@@ -49,7 +55,22 @@ export const products = [
       {
         id: "2",
         subproductName: "Kit Levedura",
+        subproductTests: [
+          "Leveduras em meio sólido e líquido",
+          "Bactérias em meio sólido e líquido",
+        ],
         subproductPrice: "R$2800",
+        subproductSize: "250 amostras",
+        subproductPriceSample: "R$10",
+      },
+      {
+        id: "3",
+        subproductName: "Kit Gel de Agarose",
+        subproductTests: [
+          "Purificação de bandas de gel de agarose",
+          "Purifique e amplifique novamente por PCR bandas com no mínimo 2uL de amostra no gel",
+        ],
+        subproductPrice: "R$2500",
         subproductSize: "250 amostras",
         subproductPriceSample: "R$10",
       },
