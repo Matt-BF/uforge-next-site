@@ -21,6 +21,14 @@
   display: flex;
 }
 
+.link {
+  color: var(--primary-color);
+}
+
+.link:hover {
+  border-bottom: 2px var(--secondary-color) solid;
+}
+
 @media (max-width: 1200px) {
   .title {
     align-self: center;

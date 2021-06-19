@@ -37,6 +37,26 @@ const product = ({ product }) => {
               ></SubproductCard>
             ))}
           </div>
+          <p>
+            Solicite seu kit por
+            <a
+              className={stylesProductPage.link}
+              href="mailto:comercial@micro-forge.com"
+            >
+              {" "}
+              Email{" "}
+            </a>
+            ou
+            <span>
+              <a
+                className={stylesProductPage.link}
+                href="https://api.whatsapp.com/send?phone=+5519994043951"
+              >
+                {" "}
+                Whatsapp
+              </a>
+            </span>
+          </p>
         </div>
       </div>
     </div>
