@@ -18,7 +18,7 @@ const product = ({ product }) => {
         />
       </Head>
       <div className={stylesProductPage.container}>
-        <h2>{product.productName}</h2>
+        <h2 className={stylesProductPage.title}>{product.productName}</h2>
         <p style={{ marginBottom: "30px", textAlign: "justify" }}>
           {product.productDescription}
         </p>
