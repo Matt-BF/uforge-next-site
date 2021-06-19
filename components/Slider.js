@@ -1,58 +1,47 @@
-import stylesCarousel from '../styles/Carousel.module.css'
-import CarouselSlide from './CarouselSlide'
-import CarouselArrow from './CarouselArrow'
-import { useState, useEffect, useRef } from 'react';
-
+import stylesCarousel from "../styles/Carousel.module.css";
+import CarouselSlide from "./CarouselSlide";
+import CarouselArrow from "./CarouselArrow";
+import { useState, useEffect, useRef } from "react";
 
 const Slider = ({ allNews }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-    const [currentSlide, setCurrentSlide] = useState(0)
+  const { length } = allNews;
 
-    const { length } = allNews
+  const idRef = useRef();
 
-    const idRef = useRef();
+  useEffect(() => {
+    const timeout = setTimeout(goToNextSlide, 5000);
+    idRef.current = timeout;
 
-    useEffect(() => {
-        const timeout = setTimeout(goToNextSlide, 3000)
-        idRef.current = timeout;
+    return () => {
+      clearTimeout(idRef.current);
+    };
+  });
 
-        return () => {
-            clearTimeout(idRef.current)
-        }
-    })
+  const goToNextSlide = () => {
+    setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1);
+  };
 
-    const goToNextSlide = () => {
-        setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1)
+  const goToPreviousSlide = () => {
+    setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1);
+  };
 
-    }
+  const onClick = (e) => {
+    e === "next" ? goToNextSlide() : goToPreviousSlide();
 
-    const goToPreviousSlide = () => {
-        setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1)
+    clearTimeout(idRef.current);
+  };
 
-    }
+  return (
+    <div className={`${stylesCarousel.carousel}`}>
+      <CarouselArrow direction="left" onClick={() => onClick("prev")} />
 
-    const onClick = (e) => {
-        e === "next" ? goToNextSlide() : goToPreviousSlide()
+      <CarouselSlide news={allNews[currentSlide]} />
 
-        clearTimeout(idRef.current)
+      <CarouselArrow direction="right" onClick={() => onClick("next")} />
+    </div>
+  );
+};
 
-    }
-
-    return (
-        <div className={`${stylesCarousel.carousel}`}>
-            <CarouselArrow direction="left"
-                onClick={() => onClick("prev")}
-            />
-
-
-            <CarouselSlide news={allNews[currentSlide]} />
-
-            <CarouselArrow direction="right"
-                onClick={() => onClick("next")}
-            />
-
-        </div>
-    )
-}
-
-export default Slider
+export default Slider;

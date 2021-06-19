@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap");
 
 :root {
-  --primary-color: #278980;
-  --secondary-color: #2bbcb2;
-  --tertiary-color: #c5c8c4;
+  --primary-color: #154247;
+  --secondary-color: #278980;
+  --tertiary-color: #2bbcb2;
+  --quaternary-color: #c5c8c4;
 }
 
 * {
@@ -29,8 +30,11 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: inherit;
+a:visited,
+a:active,
+a:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 h1 {
@@ -59,73 +63,6 @@ p {
 
 img {
   width: 100%;
-}
-/* Footer */
-.footer {
-  background-color: var(--primary-color);
-  color: #fff;
-  width: 100%;
-}
-
-.footer .flex {
-  align-items: center;
-}
-.footer a {
-  color: #fff;
-}
-
-.footer p {
-  margin: 0;
-}
-
-.push {
-  height: 27.5px;
-}
-
-.address {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.social ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-/* Products */
-
-.products h1 {
-  margin: 50px 0;
-}
-
-.products .flex {
-  flex-direction: column;
-  gap: 30px;
-  margin-bottom: 120px;
-}
-
-.products .collapsible {
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 80%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.products img {
-  width: 30%;
-}
-
-.product-content {
-  display: none;
-  width: 80%;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -221,6 +158,11 @@ img {
   color: #fff;
 }
 
+.bg-navbar {
+  background-color: var(--navbar-color);
+  color: #fff;
+}
+
 .bg-secondary {
   background-color: var(--secondary-color);
   color: #fff;
@@ -252,6 +194,6 @@ img {
 
 .icon {
   font-size: 40px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin: 10px 0;
 }

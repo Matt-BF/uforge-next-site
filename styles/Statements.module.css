@@ -12,20 +12,20 @@
 
 .container {
   background-color: #fff;
+  padding-bottom: 20px;
 }
 
 .statementFoxes {
   width: 60%;
-  margin: 10px 0;
+  margin: 0;
 }
 
 .statementParagraph {
   text-align: justify;
 }
 
-.statementRoni {
+.statementBeads {
   width: 50%;
-  margin: 10px 0;
   border-radius: 50%;
 }
 

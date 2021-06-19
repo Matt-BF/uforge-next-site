@@ -1,25 +1,14 @@
-.productContent {
-  display: flex;
-  width: 80%;
-  flex-direction: column;
-  border: 2px solid var(--secondary-color);
+.dropdown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: #e5e5e5;
 }
 
-.description {
-  text-align: center;
-}
-
-.image {
-  align-self: center;
-  width: 40%;
-}
-
-.line {
-  margin-left: 10px;
-}
-
-.subproductList {
-  margin-left: 40px;
-  display: flex;
-  flex-direction: column;
+@media (max-width: 500px) {
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+  }
 }
