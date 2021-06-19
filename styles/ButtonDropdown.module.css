@@ -2,12 +2,11 @@
   background-color: var(--secondary-color);
   cursor: pointer;
   padding: 18px;
-  width: 80%;
+  width: 100%;
   border: solid var(--secondary-color) 1px;
   border-radius: 10px;
   text-align: left;
   color: #fff;
-  margin-left: 50px;
 }
 
 .collapsible:focus {

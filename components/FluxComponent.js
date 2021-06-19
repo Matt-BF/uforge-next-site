@@ -1,6 +1,5 @@
 import stylesFluxComponent from "../styles/FluxComponent.module.css";
 import { useState } from "react";
-import products from "../pages/products";
 import Link from "next/link";
 
 const FluxComponent = ({ component }) => {

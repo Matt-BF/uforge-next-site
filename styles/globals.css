@@ -33,7 +33,6 @@ a {
 a:visited,
 a:active,
 a:focus {
-  color: inherit;
   outline: none;
   box-shadow: none;
 }

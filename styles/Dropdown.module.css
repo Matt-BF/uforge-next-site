@@ -1,9 +1,14 @@
 .dropdown {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 80%;
-  margin-left: 50px;
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
   background-color: #e5e5e5;
+}
+
+@media (max-width: 500px) {
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+  }
 }

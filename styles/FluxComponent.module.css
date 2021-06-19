@@ -16,8 +16,30 @@
 
 .productLink {
   color: var(--primary-color);
+  font-size: 18px;
 }
 
 .productLink:hover {
   border-bottom: 2px var(--secondary-color) solid;
+}
+
+@media (max-width: 1200px) {
+  .componentImg,
+  .componentImgOpaque {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .componentGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .componentImg,
+  .componentImgOpaque {
+    width: 80%;
+  }
 }
