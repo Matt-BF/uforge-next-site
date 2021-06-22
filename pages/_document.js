@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
             function gtag(){dataLayer.push(arguments);}
 
             gtag('js', new Date());
-
+            gtag('set', {cookie_flags: 'SameSite=None;Secure'});
             gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
 
               page_path: window.location.pathname,
