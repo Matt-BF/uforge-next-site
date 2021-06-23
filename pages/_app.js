@@ -8,7 +8,7 @@ import * as gtag from "../lib/gtag";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   if (typeof window !== "undefined") {
-    if (window.location.hostname != "localhost") {
+    if (window.location.hostname !== "localhost") {
       useEffect(() => {
         const handleRouteChange = (url) => {
           gtag.pageview(url);
