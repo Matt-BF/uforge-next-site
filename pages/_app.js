@@ -7,18 +7,21 @@ import * as gtag from "../lib/gtag";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  if (typeof window !== "undefined") {
+    if (window.location.hostname != "localhost") {
+      useEffect(() => {
+        const handleRouteChange = (url) => {
+          gtag.pageview(url);
+        };
 
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      gtag.pageview(url);
-    };
+        router.events.on("routeChangeComplete", handleRouteChange);
 
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
+        return () => {
+          router.events.off("routeChangeComplete", handleRouteChange);
+        };
+      }, [router.events]);
+    }
+  }
 
   return (
     <div>
