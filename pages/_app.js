@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   if (typeof window !== "undefined") {
     if (window.location.hostname !== "localhost") {
+      console.log("website");
       useEffect(() => {
         const handleRouteChange = (url) => {
           gtag.pageview(url);
