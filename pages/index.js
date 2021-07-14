@@ -25,13 +25,10 @@ const index = ({}) => {
   return (
     <div>
       <Head>
-        <title>μForge</title>
+        <title>MicroForge</title>
       </Head>
-
       <Slider allNews={allNews} />
-
       <Infos />
-
       <Statements />
     </div>
   );
