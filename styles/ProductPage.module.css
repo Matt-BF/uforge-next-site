@@ -6,7 +6,7 @@
 }
 
 .productImg {
-  width: 30%;
+  width: 50%;
   align-self: center;
   margin-bottom: 50px;
 }
@@ -35,7 +35,7 @@
   }
 
   .productImg {
-    width: 50%;
+    width: 80%;
   }
 
   .subproducts {
@@ -46,6 +46,6 @@
 
 @media (max-width: 500px) {
   .productImg {
-    width: 80%;
+    width: 100%;
   }
 }

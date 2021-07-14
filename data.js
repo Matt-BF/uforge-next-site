@@ -41,7 +41,7 @@ export const products = [
       elétricas. Dentre suas vantagens sobre outros métodos de extração, destacamos a velocidade dos protocolos\
       (variando de 20 minutos a 1 hora), extração de quantidades diminutas de DNA ou RNA (para aplicações forenses ou\
       amostras degradadas por exemplo) e uso de reagentes pouco tóxicos (contrastando com extrações como de Fenol-Clorofórmio).",
-    productImg: "/beads_promega_rack.png",
+    productImg: "/sabia_2.jpeg",
     productSubproducts: [
       {
         id: "1",
