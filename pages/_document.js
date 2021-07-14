@@ -33,9 +33,16 @@ export default class MyDocument extends Document {
           />
           <meta
             name="description"
-            content="MicroForge, uma industria brasileira voltada para facilitar a vida dos cientistas\
-          e resgatar o encanto pela ciencia por toda a sociedade"
+            content="MicroForge, uma industria brasileira voltada para facilitar a vida dos cientistas e resgatar o encanto pela ciencia por toda a sociedade"
           />
+          <meta
+            name="keywords"
+            content="ciência, beads magnéticas, microforge, venda consultiva, produtos, insumos, facilidade, uforge, micro-forge"
+          />
+          <meta name="robots" content="index, follow" />
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="language" content="Portuguese" />
+          <meta name="author" content="Mateus B Fiamenghi" />
           <link rel="icon" href="/logo_microForge.png" />
           <link
             rel="stylesheet"
