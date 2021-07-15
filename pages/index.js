@@ -25,7 +25,7 @@ const index = ({}) => {
   return (
     <div>
       <Head>
-        <title>MicroForge</title>
+        <title>MicroForge, indústria e biotecnologia brasileira</title>
       </Head>
       <Slider allNews={allNews} />
       <Infos />

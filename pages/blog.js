@@ -5,7 +5,8 @@ const blog = ({ mediumPosts }) => {
   return (
     <div>
       <Head>
-        <title>Blog</title>
+        <title>MicroForge: Notícias e Blog</title>
+        <meta description="Fique de olho em nossas atualizações e posts!" />
       </Head>
       <div style={{ margin: "50px" }}>
         <h2>Confira nossos posts no Medium!</h2>

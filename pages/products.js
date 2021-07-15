@@ -7,7 +7,8 @@ const products = ({}) => {
   return (
     <div>
       <Head>
-        <title>Produtos</title>
+        <title>MicroForge - Produtos</title>
+        <meta description="Confira nossos fluxos de biologia molecular e os produtos oferecidos para cada etapa do seu projeto!" />
       </Head>
       <div className={stylesProduct.container}>
         <h2 style={{ marginBottom: "50px" }}>
