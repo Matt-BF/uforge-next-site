@@ -42,7 +42,7 @@ const product = ({ product }) => {
             <span>
               <a
                 className={stylesProductPage.link}
-                href="https://api.whatsapp.com/send?phone=+5519994043951"
+                href="https://api.whatsapp.com/send?phone=+5519999453544"
               >
                 {" "}
                 Whatsapp
