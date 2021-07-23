@@ -30,6 +30,10 @@ const product = ({ product }) => {
             ))}
           </div>
           <p>
+            Todos nossos kits são personalizáveis em todos os aspectos para seu
+            melhor conforto e usabilidade
+          </p>
+          <p>
             Solicite seu kit por
             <a
               className={stylesProductPage.link}
@@ -48,6 +52,7 @@ const product = ({ product }) => {
                 Whatsapp
               </a>
             </span>
+            !
           </p>
         </div>
       </div>
