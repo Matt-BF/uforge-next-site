@@ -1,35 +1,24 @@
 import Head from "next/head";
-import Slider from "../components/Slider";
+import Hero from "../components/Hero";
+import Sabia from "../components/Sabia";
 import Infos from "../components/Infos";
-import Statements from "../components/Statements";
+import Footer from "../components/Footer";
+import { useEffect, useState } from "react";
 
-const index = ({}) => {
-  const allNews = [
-    {
-      id: "1",
-      title: "Estamos na Liga Brasileira de Bioinformática!",
-      excerpt: "Confira nosso post de apresentação",
-      text: " ",
-      link: "https://www.instagram.com/p/CP69pGipI8w/?utm_source=ig_web_copy_link",
-    },
-
-    {
-      id: "1",
-      title:
-        "Nossa seção de produtos vai ser diferente de tudo o que você já viu",
-      excerpt: "Visite a aba de produtos a partir de 20/06",
-      text: " ",
-      link: "/products",
-    },
-  ];
+const index = () => {
+  const [isHandheld, setisHandheld] = useState(null);
+  useEffect(() => {
+    setisHandheld(window.matchMedia("(max-width:1200px)").matches);
+  }, []);
+  console.log(isHandheld);
   return (
     <div>
       <Head>
         <title>MicroForge - indústria e biotecnologia brasileira</title>
       </Head>
-      <Slider allNews={allNews} />
-      <Infos />
-      <Statements />
+      <Hero isHandheld={isHandheld} />
+      <Infos isHandheld={isHandheld} />
+      <Sabia isHandheld={isHandheld} />
     </div>
   );
 };

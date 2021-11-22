@@ -1,15 +1,18 @@
 import stylesInfos from "../styles/Infos.module.css";
 import Card from "./Card";
 
-const Infos = () => {
+const Infos = ({ isHandheld }) => {
   return (
     <div
-      className={`${stylesInfos.container} ${stylesInfos.flex} bg-secondary`}
+      data-aos={!isHandheld ? "fade-down" : "fade"}
+      data-aos-duration="1000"
+      data-aos-anchor-placement="top-center"
+      className={`${stylesInfos.container} ${stylesInfos.flex}`}
     >
-      <h1 style={{ textAlign: "center" }}>
+      <h1 style={{ textAlign: "center", color: "#ffff" }}>
         <strong>Nosso propósito</strong>
       </h1>
-      <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
+      <h2 style={{ textAlign: "center", marginBottom: "40px", color: "#ffff" }}>
         Tornar a ciência prazerosa para quem faz, encantadora para quem vive e
         biorreverente
       </h2>

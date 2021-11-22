@@ -1,0 +1,8 @@
+.dnaImg {
+  position: fixed;
+  z-index: -1;
+  width: 35%;
+  opacity: 20%;
+  bottom: 0;
+  right: 0;
+}

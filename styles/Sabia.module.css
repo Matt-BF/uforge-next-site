@@ -1,0 +1,38 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: top;
+}
+
+.statementParagraph {
+  margin-left: 80px;
+  color: #ffff;
+}
+
+.statementBeads {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.sabia {
+  width: 50%;
+  justify-self: center;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 20px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .statementParagraph {
+    text-align: center;
+    margin-left: 0;
+  }
+}

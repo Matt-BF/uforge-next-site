@@ -1,6 +1,5 @@
 .container {
   margin: 50px;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }

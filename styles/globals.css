@@ -6,6 +6,7 @@
   --secondary-color: #278980;
   --tertiary-color: #2bbcb2;
   --quaternary-color: #c5c8c4;
+  --gradient: linear-gradient(70deg, #00383e 40%, #3f6f72 25%);
 }
 
 * {
@@ -14,12 +15,29 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* colors 
+67744e esterco green
+00383e dark green F
+3f6f72 light green mu
+fff58d yellow
+a9a893 grey
+bcbb54 golden brown
+5c5c50 light grey
+*/
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
+  background: var(--gradient);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 ul {
@@ -77,31 +95,6 @@ img {
 /* Media Queries */
 /* Tablets and under*/
 @media (max-width: 1200px) {
-  .infos .flex {
-    align-items: center;
-  }
-
-  .infos h1 {
-    text-align: center;
-  }
-
-  .infos .flex-grid {
-    flex-direction: column;
-  }
-
-  .infos .card {
-    max-width: 100%;
-  }
-
-  .statements .flex {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .statements img {
-    width: 30%;
-  }
-
   .footer .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -142,10 +135,6 @@ img {
 
 /* Mobile*/
 @media (max-width: 500px) {
-  .statements img {
-    width: 80%;
-  }
-
   .social ul {
     gap: 20px;
   }
@@ -155,16 +144,6 @@ img {
 
 .bg-primary {
   background-color: var(--primary-color);
-  color: #fff;
-}
-
-.bg-navbar {
-  background-color: var(--navbar-color);
-  color: #fff;
-}
-
-.bg-secondary {
-  background-color: var(--secondary-color);
   color: #fff;
 }
 
