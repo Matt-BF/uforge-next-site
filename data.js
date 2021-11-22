@@ -29,6 +29,24 @@ export const fluxes = [
       },
     ],
   },
+  {
+    id: "2",
+    fluxTitle: "Acessórios",
+    fluxComponents: [
+      {
+        id: "1",
+        componentName: "Racks Magnéticas",
+        componentImg: "extraction.png",
+        componentProducts: ["Racks"],
+      },
+      {
+        id: "2",
+        componentName: "Plásticos",
+        componentImg: "extraction.png",
+        componentProducts: ["Placas Deep-Well", "Ponteiras", "Tip-Combs"],
+      },
+    ],
+  },
 ];
 
 export const products = [
@@ -58,10 +76,11 @@ export const products = [
       },
       {
         id: "2",
-        subproductName: "Kit Levedura",
+        subproductName: "Kit Microrganismos",
         subproductTests: [
           "Leveduras em meio sólido e líquido",
           "Bactérias em meio sólido e líquido",
+          "Creme de levedura",
         ],
         subproductPrice: "R$4500",
         subproductSize: "250 reações",
@@ -78,25 +97,102 @@ export const products = [
         subproductSize: "250 reações",
         subproductPriceSample: "R$15",
       },
+      {
+        id: "4",
+        subproductName: "Kit Tecidos",
+        subproductTests: [
+          "Nadadeira de peixes",
+          "Diversos tecidos humanos (Cerebral, Renal, Cardíaco, etc.)",
+          "Utilize menos de 50mg de tecido para sua extração!",
+        ],
+        subproductPrice: "R$3750",
+        subproductSize: "250 reações",
+        subproductPriceSample: "R$15",
+      },
+      {
+        id: "4",
+        subproductName: "Kit Sêmen",
+        subproductTests: [],
+        subproductPrice: "R$3750",
+        subproductSize: "250 reações",
+        subproductPriceSample: "R$15",
+      },
+      {
+        id: "5",
+        subproductName: "Kit cfDNA",
+        subproductTests: [
+          "DNA livre de células tumorais",
+          "DNA livre de células para diagnóstico de sexagem fetal",
+        ],
+        subproductPrice: "R$1500",
+        subproductSize: "100 reações",
+        subproductPriceSample: "R$15",
+      },
     ],
   },
-];
-
-export const allNews = [
   {
-    id: "1",
-    title: "Estamos na Liga Brasileira de Bioinformática!",
-    excerpt: "Confira nosso post de apresentação",
-    text: " ",
-    link: "https://www.instagram.com/p/CP69pGipI8w/?utm_source=ig_web_copy_link",
+    id: "2",
+    productName: "Racks",
+    productDescription:
+      "Racks Magnéticas para atender todas as suas demandas de extração em diferentes tipos de placas, tubos, ou equipamentos automatizados",
+    productImg: "/rack.jpeg",
+    productSubproducts: [
+      {
+        id: "1",
+        subproductName: "Rack para placas deep-well",
+        subproductTests: [],
+        subproductPrice: "R$800",
+        subproductSize: "",
+        subproductPriceSample: "",
+      },
+      {
+        id: "2",
+        subproductName: "Rack para tubos",
+        subproductTests: [],
+        subproductPrice: "R$1000",
+        subproductSize: "16 extrações",
+        subproductPriceSample: "",
+      },
+    ],
   },
-
   {
-    id: "1",
-    title:
-      "Nossa seção de produtos vai ser diferente de tudo o que você já viu",
-    excerpt: "Visite a aba de produtos a partir de 20/06",
-    text: " ",
-    link: "/products",
+    id: "3",
+    productName: "Ponteiras",
+    productDescription: "Ponteiras ",
+    productImg: "/ponteiras.jpeg",
+    productSubproducts: [
+      {
+        id: "1",
+        subproductName: "Ponteira p1000",
+        subproductTests: [],
+        subproductPrice: "R$960",
+        subproductSize: "1000 ponteiras",
+        subproductPriceSample: "",
+      },
+    ],
+  },
+  {
+    id: "3",
+    productName: "Tip-Combs",
+    productDescription: "Tip-Combs para extração em robô",
+    productImg: "/tip-comb.jpeg",
+    productSubproducts: [
+      {
+        id: "1",
+        subproductName: "Tip-Comb 8",
+        subproductTests: [],
+        subproductPrice: "R$10",
+        subproductSize: "",
+        subproductPriceSample: "",
+      },
+      {
+        id: "1",
+        subproductName: "Tip-Comb 96",
+        subproductTests: [],
+        subproductPrice: "R$15",
+        subproductSize: "",
+        subproductPriceSample: "",
+      },
+    ],
   },
 ];

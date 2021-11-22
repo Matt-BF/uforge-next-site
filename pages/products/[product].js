@@ -20,7 +20,7 @@ const product = ({ product }) => {
           alt=""
         />
         <div className={stylesProductPage.subproductsContainer}>
-          <h1>Nossos kits</h1>
+          <h1>Confira!</h1>
           <div className={stylesProductPage.subproducts}>
             {product.productSubproducts.map((subproduct) => (
               <SubproductCard
@@ -30,11 +30,11 @@ const product = ({ product }) => {
             ))}
           </div>
           <p>
-            Todos nossos kits são personalizáveis em todos os aspectos para seu
-            melhor conforto e usabilidade
+            Todos nossos produtos são personalizáveis em todos os aspectos para
+            seu melhor conforto e usabilidade
           </p>
           <p>
-            Solicite seu kit por
+            Solicite por
             <a
               className={stylesProductPage.link}
               href="mailto:comercial@micro-forge.com"
