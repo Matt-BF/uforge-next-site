@@ -9,6 +9,6 @@
   color: #fff;
 }
 
-.collapsible:focus {
-  outline: 0;
+.collapsible:hover {
+  background-color: var(--tertiary-color);
 }

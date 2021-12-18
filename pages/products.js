@@ -11,7 +11,9 @@ const products = ({}) => {
         <meta description="Confira nossos fluxos de biologia molecular e os produtos oferecidos para cada etapa do seu projeto!" />
       </Head>
       <div className={stylesProduct.container}>
-        <h2 style={{ marginBottom: "50px", color: "#fff" }}>
+        <h2
+          style={{ marginBottom: "50px", color: "#fff", textAlign: "center" }}
+        >
           Escolha um fluxo para ver nossos produtos disponíveis
         </h2>
 

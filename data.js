@@ -42,7 +42,7 @@ export const fluxes = [
       {
         id: "2",
         componentName: "Plásticos",
-        componentImg: "extraction.png",
+        componentImg: "ponteiras.png",
         componentProducts: ["Placas Deep-Well", "Ponteiras", "Tip-Combs"],
       },
     ],
