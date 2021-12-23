@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&display=swap");
 
 :root {
   --primary-color: #154247;
-  --secondary-color: #278980;
-  --tertiary-color: #2bbcb2;
-  --quaternary-color: #c5c8c4;
-  --gradient: linear-gradient(70deg, #00383e 40%, #3f6f72 25%);
+  --secondary-color: #48b1bd;
+  --gradient: linear-gradient(70deg, #05525a 40%, #3f6f72 25%);
 }
 
 * {
@@ -30,7 +30,7 @@ bcbb54 golden brown
 */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   line-height: 1.6;
   display: flex;
   height: 100vh;
@@ -56,19 +56,19 @@ a:focus {
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.2;
   margin: 10px 0;
 }
 
 h2 {
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
   margin: 10px 0;
 }
 
 h3 {
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.2;
   margin: 10px 0;
 }

@@ -14,7 +14,7 @@ const products = ({}) => {
         <h2
           style={{ marginBottom: "50px", color: "#fff", textAlign: "center" }}
         >
-          Escolha um fluxo para ver nossos produtos disponíveis
+          Escolha um tema para ver nossos produtos disponíveis!
         </h2>
 
         {fluxes.map((flux) => (

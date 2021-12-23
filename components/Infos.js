@@ -23,7 +23,7 @@ const Infos = ({ isHandheld }) => {
           text="Viver na fronteira do conhecimento é ao mesmo
           tempo recompensante e desafiador.
           Tornamos os preparativos para sua experimentação simples
-          pra você focar no que importa: a verdade"
+          pra você focar no que importa: a verdade."
         />
         <Card
           title={<i className="fas fa-users icon"></i>}

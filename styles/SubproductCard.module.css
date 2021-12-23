@@ -21,6 +21,10 @@
   color: var(--primary-color);
 }
 
+.spanText {
+  color: var(--primary-color);
+}
+
 .cardText {
   text-align: left;
   margin: 10px 0 0 0;

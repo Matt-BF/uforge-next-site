@@ -5,14 +5,21 @@ const SubproductCard = ({ subproduct }) => {
     <div className={stylesCard.card}>
       <h2 className={stylesCard.cardTitle}>{subproduct.subproductName}</h2>
       <p className={stylesCard.cardText}>
-        Preço: {subproduct.subproductPrice}
+        <span className={stylesCard.spanText}>Preço:</span>{" "}
+        {subproduct.subproductPrice}
         <br />
         {subproduct.subproductSize != "" && (
-          <span>Tamanho: {subproduct.subproductSize}</span>
+          <>
+            <span className={stylesCard.spanText}>Tamanho: </span>
+            {subproduct.subproductSize}
+          </>
         )}
         <br />
         {subproduct.subproductPriceSample != "" && (
-          <span>Preço por reação: {subproduct.subproductPriceSample}</span>
+          <>
+            <span className={stylesCard.spanText}>Preço por reação:</span>{" "}
+            {subproduct.subproductPriceSample}
+          </>
         )}
       </p>
 
@@ -20,7 +27,7 @@ const SubproductCard = ({ subproduct }) => {
         {subproduct.subproductTests.length > 0 && (
           <span>
             <br />
-            Testado para: <br />
+            <span className={stylesCard.spanText}>Testado para:</span> <br />
             {subproduct.subproductTests.map((test, idx) => (
               <span key={idx}>
                 &bull; {test}

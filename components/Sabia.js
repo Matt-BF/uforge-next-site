@@ -12,11 +12,12 @@ const Sabia = ({ isHandheld }) => {
           data-aos-anchor-placement={!isHandheld && "top-center"}
         >
           <p className={stylesSabia.statementParagraph}>
-            "Um produto nacional? Para testar no meio de uma pandemia?
-            Justamente para detectar o coronavírus? Nunca estive tão feliz de
-            ter aceito uma amostra grátis. 160 mil exames depois, ainda usando
-            seu kit de extração, só podemos agradecer à Micro-Forge pela
-            incrível parceria! Muito sucesso!"
+            Conheça a linha de extração por beads magnéticas idealizada por
+            nossos cientistas num momento de pandemia, e que foi responsável
+            pela realização de mais de 180 mil exames de Covid-19! Hoje a Linha
+            Sabiá conta com extrações para as mais diversas amostras e na
+            conformação de maior facilidade para o pesquisador, seja uma
+            extração manual, automatizada, de 10, 100, 1000 ou 10.000 amostras"
           </p>
           <Link
             href={{
