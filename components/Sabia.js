@@ -1,15 +1,15 @@
 import stylesSabia from "../styles/Sabia.module.css";
 import Link from "next/link";
 
-const Sabia = ({ isHandheld }) => {
+const Sabia = () => {
   return (
     <div>
       <div className={`${stylesSabia.grid}`}>
         <div
           className={stylesSabia.textGrid}
-          data-aos={!isHandheld ? "fade-down-right" : "fade"}
+          data-aos="fade-down-right"
           data-aos-duration="1000"
-          data-aos-anchor-placement={!isHandheld && "top-center"}
+          data-aos-anchor-placement="top-center"
         >
           <p className={stylesSabia.statementParagraph}>
             Conheça a linha de extração por beads magnéticas idealizada por
@@ -28,7 +28,7 @@ const Sabia = ({ isHandheld }) => {
           </Link>
         </div>
         <img
-          data-aos={!isHandheld ? "fade-down-left" : "fade"}
+          data-aos="fade-down-left"
           data-aos-duration="1000"
           data-aos-anchor-placement="top-center"
           className={stylesSabia.sabia}

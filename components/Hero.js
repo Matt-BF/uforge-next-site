@@ -1,12 +1,12 @@
 import stylesHero from "../styles/Hero.module.css";
 
-const Hero = ({ isHandheld }) => {
+const Hero = () => {
   return (
     <div className={stylesHero.container}>
       <img
         data-aos="fade"
         data-aos-duration="1000"
-        data-aos-anchor-placement={!isHandheld ? "top-center" : "top-center"}
+        data-aos-anchor-placement="top-center"
         className={stylesHero.logo}
         src="/uforge_pb.png"
         alt="Picture of the author"

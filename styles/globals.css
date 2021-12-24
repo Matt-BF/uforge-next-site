@@ -38,6 +38,7 @@ body {
   background: var(--gradient);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 ul {

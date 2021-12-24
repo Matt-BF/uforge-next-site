@@ -15,12 +15,6 @@ const SubproductCard = ({ subproduct }) => {
           </>
         )}
         <br />
-        {subproduct.subproductPriceSample != "" && (
-          <>
-            <span className={stylesCard.spanText}>Preço por reação:</span>{" "}
-            {subproduct.subproductPriceSample}
-          </>
-        )}
       </p>
 
       <p className={stylesCard.cardText}>
