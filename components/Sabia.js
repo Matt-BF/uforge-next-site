@@ -17,7 +17,7 @@ const Sabia = () => {
             pela realização de mais de 180 mil exames de Covid-19! Hoje a Linha
             Sabiá conta com extrações para as mais diversas amostras e na
             conformação de maior facilidade para o pesquisador, seja uma
-            extração manual, automatizada, de 10, 100, 1000 ou 10.000 amostras"
+            extração manual, automatizada, de 10, 100, 1000 ou 10.000 amostras.
           </p>
           <Link
             href={{
