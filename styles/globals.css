@@ -30,13 +30,14 @@ bcbb54 golden brown
 */
 html {
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 body {
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.6;
   display: flex;
-  min-height: 100vh;
+  min-height: 100%;
   flex-direction: column;
   background: var(--gradient);
   background-attachment: fixed;
