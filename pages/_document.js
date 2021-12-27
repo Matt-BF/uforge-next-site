@@ -53,9 +53,11 @@ export default class MyDocument extends Document {
         </Head>
 
         <body>
-          <Main />
+          <div className="bodyWrapper">
+            <Main />
 
-          <NextScript />
+            <NextScript />
+          </div>
         </body>
       </Html>
     );
