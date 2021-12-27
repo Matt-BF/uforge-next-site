@@ -39,7 +39,6 @@ body {
   display: flex;
   flex-direction: column;
   background: var(--gradient);
-  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
