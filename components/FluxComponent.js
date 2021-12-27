@@ -29,7 +29,7 @@ const FluxComponent = ({ component }) => {
       )}
 
       {open && (
-        <div>
+        <div className={stylesFluxComponent.componentProducts}>
           {component.componentProducts.map((componentProduct) => (
             <Link
               href={{

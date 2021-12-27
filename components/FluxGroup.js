@@ -5,7 +5,7 @@ import { useState } from "react";
 const FluxGroup = ({ flux }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div style={{ marginBottom: "30px" }}>
+    <div style={{ marginBottom: "80px" }}>
       <ButtonDropdown
         onClick={() => setOpen((open) => !open)}
         fluxTitle={flux.fluxTitle}

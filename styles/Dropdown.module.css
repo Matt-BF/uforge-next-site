@@ -1,7 +1,6 @@
 .dropdown {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   background-color: #e5e5e5;
 }

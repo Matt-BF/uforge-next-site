@@ -1,26 +1,19 @@
 .container {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
-}
-
-.flex {
-  align-items: flex-start;
   flex-direction: column;
-}
-
-.flexGrid {
-  display: flex;
-  justify-content: space-around;
+  margin-bottom: 200px;
 }
 
 .flex {
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
   align-items: center;
 }
 
 @media (max-width: 1200px) {
-  .flexGrid {
-    flex-direction: column;
-    align-items: center;
+  .container {
+    margin-bottom: 120px;
   }
 }
