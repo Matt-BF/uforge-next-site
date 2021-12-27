@@ -126,6 +126,22 @@ export const products = [
     ],
   },
   {
+    id: "1",
+    productName: "Placas Deep-Well",
+    productDescription:
+      "Placas Deep-Well de 2mL confeccionadas com Polipropileno, indicadas para realização de extrações de ácidos nucleicos, ensaios enzimáticos, armazenamento de amostras, dentre outras aplicações.",
+    productImg: "/placa_dw.jpg",
+    productSubproducts: [
+      {
+        id: "1",
+        subproductName: "Placa Deep-Well",
+        subproductTests: [],
+        subproductPrice: "R$55/placa",
+        subproductSize: "",
+      },
+    ],
+  },
+  {
     id: "2",
     productName: "Racks",
     productDescription:
