@@ -41,12 +41,11 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="bodyWrap">
-        <Navbar />
-        <Component {...pageProps} />
-        <BackgroundDNA />
-        <Footer />
-      </div>
+
+      <Navbar />
+      <Component {...pageProps} />
+      <BackgroundDNA />
+      <Footer />
     </div>
   );
 }
