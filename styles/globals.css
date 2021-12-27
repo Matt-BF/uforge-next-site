@@ -29,6 +29,10 @@ bcbb54 golden brown
 5c5c50 light grey
 */
 
+.bodyWrap {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.6;
@@ -38,7 +42,6 @@ body {
   background: var(--gradient);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow-x: hidden;
 }
 
 ul {
