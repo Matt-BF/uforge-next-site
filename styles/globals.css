@@ -42,6 +42,7 @@ body {
   flex-direction: column;
   background: var(--gradient);
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 ul {
