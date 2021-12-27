@@ -6,6 +6,12 @@
   cursor: pointer;
 }
 
+.componentProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .componentImg {
   width: 40%;
 }
@@ -16,7 +22,7 @@
 
 .productLink {
   color: var(--primary-color);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .productLink:hover {

@@ -29,6 +29,24 @@ export const fluxes = [
       },
     ],
   },
+  {
+    id: "2",
+    fluxTitle: "Acessórios",
+    fluxComponents: [
+      {
+        id: "1",
+        componentName: "Racks Magnéticas",
+        componentImg: "extraction.png",
+        componentProducts: ["Racks"],
+      },
+      {
+        id: "2",
+        componentName: "Plásticos",
+        componentImg: "ponteiras.png",
+        componentProducts: ["Placas Deep-Well", "Ponteiras", "Tip-Combs"],
+      },
+    ],
+  },
 ];
 
 export const products = [
@@ -52,51 +70,142 @@ export const products = [
           "DNA livre em amostras de solo",
           "DNA livre em amostras de água",
         ],
-        subproductPrice: "R$3750",
-        subproductSize: "250 reações",
-        subproductPriceSample: "R$15",
+        subproductPrice: "R$15/extração",
+        subproductSize: "A partir de 50 reações",
       },
       {
         id: "2",
-        subproductName: "Kit Levedura",
+        subproductName: "Kit Microrganismos",
         subproductTests: [
           "Leveduras em meio sólido e líquido",
           "Bactérias em meio sólido e líquido",
+          "Creme de levedura",
         ],
-        subproductPrice: "R$4500",
-        subproductSize: "250 reações",
-        subproductPriceSample: "R$18",
+        subproductPrice: "R$18/extração",
+        subproductSize: "A partir de 50 reações",
       },
       {
         id: "3",
-        subproductName: "Kit Gel de Agarose",
+        subproductName: "Kit Purificação",
         subproductTests: [
           "Purificação de bandas de gel de agarose",
+          "Purificação de produtos de PCR",
           "Purifique e amplifique novamente por PCR bandas com no mínimo 2uL de amostra no gel",
         ],
-        subproductPrice: "R$3750",
-        subproductSize: "250 reações",
-        subproductPriceSample: "R$15",
+        subproductPrice: "R$15/extração",
+        subproductSize: "A partir de 50 reações",
+      },
+      {
+        id: "4",
+        subproductName: "Kit Tecidos",
+        subproductTests: [
+          "Nadadeira de peixes",
+          "Diversos tecidos humanos (Cerebral, Renal, Cardíaco, etc.)",
+          "Utilize menos de 50mg de tecido para sua extração!",
+        ],
+        subproductPrice: "R$18/extração",
+        subproductSize: "A partir de 25 reações",
+      },
+      {
+        id: "4",
+        subproductName: "Kit Sêmen",
+        subproductTests: [],
+        subproductPrice: "R$18/extração",
+        subproductSize: "A partir de 25 reações",
+      },
+      {
+        id: "5",
+        subproductName: "Kit cfDNA",
+        subproductTests: [
+          "DNA livre de células tumorais",
+          "DNA livre de células para diagnóstico de sexagem fetal",
+        ],
+        subproductPrice: "R$18/extração",
+        subproductSize: "A partir de 15 reações",
       },
     ],
   },
-];
-
-export const allNews = [
   {
     id: "1",
-    title: "Estamos na Liga Brasileira de Bioinformática!",
-    excerpt: "Confira nosso post de apresentação",
-    text: " ",
-    link: "https://www.instagram.com/p/CP69pGipI8w/?utm_source=ig_web_copy_link",
+    productName: "Placas Deep-Well",
+    productDescription:
+      "Placas Deep-Well de 2mL confeccionadas com Polipropileno, indicadas para realização de extrações de ácidos nucleicos, ensaios enzimáticos, armazenamento de amostras, dentre outras aplicações.",
+    productImg: "/placa_dw.jpg",
+    productSubproducts: [
+      {
+        id: "1",
+        subproductName: "Placa Deep-Well",
+        subproductTests: [],
+        subproductPrice: "R$55/placa",
+        subproductSize: "",
+      },
+    ],
   },
-
   {
-    id: "1",
-    title:
-      "Nossa seção de produtos vai ser diferente de tudo o que você já viu",
-    excerpt: "Visite a aba de produtos a partir de 20/06",
-    text: " ",
-    link: "/products",
+    id: "2",
+    productName: "Racks",
+    productDescription:
+      "Racks Magnéticas para atender todas as suas demandas de extração em diferentes tipos de placas, tubos, ou equipamentos automatizados",
+    productImg: "/rack.jpeg",
+    productSubproducts: [
+      {
+        id: "1",
+        subproductName: "Rack para placas",
+        subproductTests: [],
+        subproductPrice: "R$800",
+        subproductSize: "96 amostras",
+      },
+      {
+        id: "2",
+        subproductName: "Rack para tubos",
+        subproductTests: [],
+        subproductPrice: "R$1000",
+        subproductSize: "16 extrações",
+      },
+      {
+        id: "3",
+        subproductName: "Rack para robôs",
+        subproductTests: [],
+        subproductPrice: "A combinar",
+        subproductSize: "A combinar",
+      },
+    ],
+  },
+  {
+    id: "3",
+    productName: "Ponteiras",
+    productDescription: "Ponteiras ",
+    productImg: "/ponteiras.jpeg",
+    productSubproducts: [
+      {
+        id: "1",
+        subproductName: "Ponteira p1000",
+        subproductTests: [],
+        subproductPrice: "R$960",
+        subproductSize: "1000 ponteiras",
+      },
+    ],
+  },
+  {
+    id: "3",
+    productName: "Tip-Combs",
+    productDescription: "Tip-Combs para extração em robô",
+    productImg: "/tip-comb.jpeg",
+    productSubproducts: [
+      {
+        id: "1",
+        subproductName: "Tip-Comb 8",
+        subproductTests: [],
+        subproductPrice: "R$10",
+        subproductSize: "",
+      },
+      {
+        id: "2",
+        subproductName: "Tip-Comb 96",
+        subproductTests: [],
+        subproductPrice: "R$15",
+        subproductSize: "",
+      },
+    ],
   },
 ];
