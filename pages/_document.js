@@ -43,7 +43,7 @@ export default class MyDocument extends Document {
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="language" content="Portuguese" />
           <meta name="author" content="Mateus B Fiamenghi" />
-          <link rel="icon" href="/logo_microForge.png" />
+          <link rel="icon" type="image/png" href="/uforge_icon.png" />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
