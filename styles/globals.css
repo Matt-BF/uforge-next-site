@@ -36,9 +36,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.6;
   display: flex;
-  height: 100vh;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
+  min-height: 100vh;
   flex-direction: column;
   background: var(--gradient);
   background-attachment: fixed;
