@@ -31,6 +31,8 @@ bcbb54 golden brown
 
 .bodyWrap {
   overflow-x: hidden;
+  background: var(--gradient);
+  background-attachment: fixed;
 }
 
 body {
@@ -39,8 +41,6 @@ body {
   display: flex;
   height: 100vh;
   flex-direction: column;
-  background: var(--gradient);
-  background-attachment: fixed;
 }
 
 ul {
@@ -98,10 +98,6 @@ img {
 /* Media Queries */
 /* Tablets and under*/
 @media (max-width: 1200px) {
-  body {
-    height: 100%;
-  }
-
   .footer .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
