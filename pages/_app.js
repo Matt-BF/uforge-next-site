@@ -20,6 +20,14 @@ function MyApp({ Component, pageProps }) {
     });
     AOS.refresh();
   }, []);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      document.documentElement.style.setProperty(
+        "--vh",
+        `${window.innerHeight / 100}px`
+      );
+    });
+  }, []);
   if (typeof window !== "undefined") {
     if (window.location.hostname !== "localhost") {
       useEffect(() => {
