@@ -6,6 +6,11 @@
   color: #ffff;
 }
 
+.productDescription {
+  margin: 0 200px 50px;
+  text-align: justify;
+}
+
 .productImg {
   width: 50%;
   margin-bottom: 50px;
@@ -35,6 +40,11 @@
 @media (max-width: 1200px) {
   .title {
     align-self: center;
+  }
+
+  .productDescription {
+    margin: 0 0 50px;
+    text-align: justify;
   }
 
   .productImg {

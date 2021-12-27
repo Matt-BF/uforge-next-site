@@ -11,7 +11,7 @@ const product = ({ product }) => {
       </Head>
       <div className={stylesProductPage.container}>
         <h2 className={stylesProductPage.title}>{product.productName}</h2>
-        <p style={{ marginBottom: "30px", textAlign: "justify" }}>
+        <p className={stylesProductPage.productDescription}>
           {product.productDescription}
         </p>
         <img
