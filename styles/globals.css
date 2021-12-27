@@ -98,6 +98,10 @@ img {
 /* Media Queries */
 /* Tablets and under*/
 @media (max-width: 1200px) {
+  body {
+    height: 100%;
+  }
+
   .footer .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
