@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
       // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
       once: false, // whether animation should happen only once - while scrolling down
       mirror: false, // whether elements should animate out while scrolling past them
-      disable: true,
+      disable: "mobile",
     });
     AOS.refresh();
   }, []);
