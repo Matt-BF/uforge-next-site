@@ -1,0 +1,50 @@
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.formInput {
+  outline: none;
+  font-family: inherit;
+  text-align: center;
+  width: 200px;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.formInput:focus {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.textArea {
+  font-family: inherit;
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.textArea:focus {
+  border-color: var(--secondary-color);
+}
+
+.formButton {
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  transition: 0.3s ease-out;
+  align-self: flex-end;
+}
+
+.formButton:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: var(--secondary-color);
+}

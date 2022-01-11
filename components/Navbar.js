@@ -13,6 +13,9 @@ const Navbar = () => {
             <li>
               <Link href="/products">Produtos</Link>
             </li>
+            <li>
+              <Link href="/contact">Contato</Link>
+            </li>
           </ul>
         </nav>
       </div>
