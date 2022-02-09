@@ -7,7 +7,7 @@ export const fluxes = [
         id: "1",
         componentName: "Extração",
         componentImg: "extraction.png",
-        componentProducts: ["Linha Sabiá"],
+        componentProducts: ["Linha Sabiá", "Linha Maracajá"],
       },
       {
         id: "2",
@@ -59,7 +59,7 @@ export const products = [
       elétricas. Dentre suas vantagens sobre outros métodos de extração, destacamos a velocidade dos protocolos\
       (variando de 20 minutos a 1 hora), extração de quantidades diminutas de DNA ou RNA (para aplicações forenses ou\
       amostras degradadas por exemplo) e uso de reagentes pouco tóxicos (contrastando com extrações como de Fenol-Clorofórmio).",
-    productImg: "/sabia_2.jpeg",
+    productImg: "/sabia_2.jpg",
     productSubproducts: [
       {
         id: "1",
@@ -122,6 +122,24 @@ export const products = [
         ],
         subproductPrice: "R$18/extração",
         subproductSize: "A partir de 15 reações",
+      },
+    ],
+  },
+  {
+    id: "2",
+    productName: "Linha Maracajá",
+    productDescription:
+      "A Linha Maracajá compõe soluções para Lise Rápida de células, com a finalidade de acelerar os procedimentos laboratoriais,\
+      principalmente em análises clínicas, diminuindo expressivamente o tempo até que se tenha um laudo ou resultado de exame, sem perder qualidade ou\
+      sensibilidade.",
+    productImg: "/maracaja.jpeg",
+    productSubproducts: [
+      {
+        id: "1",
+        subproductName: "Solução de Lise Rápida",
+        subproductTests: ["Saliva", "Swab Nasal/Orofaríngeo"],
+        subproductPrice: "R$3/extração",
+        subproductSize: "A partir de 100 reações",
       },
     ],
   },
