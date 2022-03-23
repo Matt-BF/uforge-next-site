@@ -1,14 +1,13 @@
 .footer {
   color: #fff;
   width: 100%;
-  padding: 20px 0;
+  padding: 30px 0;
   margin-top: 50px;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.footerFlex {
-  align-items: center;
-}
 .footerLink {
   color: #fff;
 }
