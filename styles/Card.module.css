@@ -16,12 +16,14 @@
   margin: 0;
   padding: 0;
   border-radius: 10px 0 0 10px;
+  width: 30rem;
 }
 
 .cardImgR {
   margin: 0;
   padding: 0;
   border-radius: 0 10px 10px 0;
+  width: 30rem;
 }
 
 .cardTextWrapper {
@@ -47,5 +49,6 @@
   .cardImgL,
   .cardImgR {
     border-radius: 10px 10px 0 0;
+    width: 100%;
   }
 }
