@@ -9,7 +9,7 @@ const Footer = () => {
         </div>
         <div className={stylesFooter.address}>
           <p>Av. Prefeito Jose Lozano Araujo 1136 Bloco B</p>
-          <p>CEP 13140-556</p>
+          <p>CEP 13140-558</p>
         </div>
         <nav className={stylesFooter.social}>
           <ul>
