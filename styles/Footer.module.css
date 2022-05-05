@@ -1,14 +1,13 @@
 .footer {
   color: #fff;
   width: 100%;
-  padding: 20px 0;
+  padding: 30px 0;
   margin-top: 50px;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.footerFlex {
-  align-items: center;
-}
 .footerLink {
   color: #fff;
 }
@@ -30,6 +29,11 @@
 }
 
 @media (max-width: 1200px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .address {
     align-items: center;
   }
@@ -42,17 +46,6 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 500px) {
-  .footerFlex {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .social ul {
     gap: 20px;
   }
 }

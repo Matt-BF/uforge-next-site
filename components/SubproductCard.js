@@ -5,9 +5,6 @@ const SubproductCard = ({ subproduct }) => {
     <div className={stylesCard.card}>
       <h2 className={stylesCard.cardTitle}>{subproduct.subproductName}</h2>
       <p className={stylesCard.cardText}>
-        <span className={stylesCard.spanText}>Preço:</span>{" "}
-        {subproduct.subproductPrice}
-        <br />
         {subproduct.subproductSize != "" && (
           <>
             <span className={stylesCard.spanText}>Tamanho: </span>
@@ -34,5 +31,7 @@ const SubproductCard = ({ subproduct }) => {
     </div>
   );
 };
-
+/*<span className={stylesCard.spanText}>Preço:</span>{" "}
+        {subproduct.subproductPrice}
+        <br />*/
 export default SubproductCard;
