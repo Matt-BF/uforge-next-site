@@ -32,14 +32,11 @@
   .footer {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .address {
     align-items: center;
-  }
-
-  .address p {
-    text-align: center;
   }
 
   .social ul {
