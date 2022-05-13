@@ -1,39 +1,43 @@
-import Head from "next/head";
+import stylesBlogPage from "../styles/BlogPage.module.css";
+import Link from "next/link";
+import groq from "groq";
+import client from "../client";
 import BlogCard from "../components/BlogCard";
 
-const blog = ({ mediumPosts }) => {
+const blog = ({ posts }) => {
   return (
-    <div>
-      <Head>
-        <title>MicroForge - Notícias e Blog</title>
-        <meta description="Fique de olho em nossas atualizações e posts!" />
-      </Head>
-      <div style={{ margin: "50px" }}>
-        <h2>Confira nossos posts no Medium!</h2>
-
-        {mediumPosts.items.map((post, idx) => (
-          <BlogCard
-            key={idx}
-            link={post.guid}
-            title={post.title}
-            date={post.pubDate.split(" ")[0]}
-          />
-        ))}
+    <div className={stylesBlogPage.container}>
+      <h1>Confira nossos posts!</h1>
+      <div className={stylesBlogPage.cardGroup}>
+        {posts.length > 0 &&
+          posts.map(
+            (post) =>
+              post.slug && (
+                <Link
+                  key={post._id}
+                  href="/blog/[slug]"
+                  as={`/blog/${post.slug.current}`}
+                >
+                  <a>
+                    <BlogCard key={post._id} post={post} />
+                  </a>
+                </Link>
+              )
+          )}
       </div>
     </div>
   );
 };
 
-export const getServerSideProps = async () => {
-  const res = await fetch(
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@microforge"
-  );
-  const mediumPosts = await res.json();
+export async function getStaticProps() {
+  const posts = await client.fetch(groq`
+      *[_type == "post" && publishedAt < now()] | order(publishedAt desc)
+    `);
   return {
     props: {
-      mediumPosts,
+      posts,
     },
   };
-};
+}
 
 export default blog;
