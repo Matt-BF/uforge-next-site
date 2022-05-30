@@ -28,9 +28,25 @@ const SubproductCard = ({ subproduct }) => {
           </span>
         )}
       </p>
+      <p className={stylesCard.cardText}>
+        {subproduct.subproductUses.length > 0 && (
+          <span>
+            <br />
+            <span className={stylesCard.spanText}>Exemplos de usos:</span>{" "}
+            <br />
+            {subproduct.subproductUses.map((use, idx) => (
+              <span key={idx}>
+                &bull; {use}
+                <br />
+              </span>
+            ))}
+          </span>
+        )}
+      </p>
     </div>
   );
 };
+
 /*<span className={stylesCard.spanText}>Preço:</span>{" "}
         {subproduct.subproductPrice}
         <br />*/
