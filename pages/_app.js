@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import BackgroundDNA from "../components/BackgroundDNA";
-import WhatsappButton from "../components/WhatsappButton";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import * as gtag from "../lib/gtag";
@@ -46,7 +45,6 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       <Component {...pageProps} />
       <BackgroundDNA />
-      <WhatsappButton />
       <Footer />
     </div>
   );

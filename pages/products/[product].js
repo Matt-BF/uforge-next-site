@@ -14,21 +14,24 @@ const product = ({ product }) => {
         <p className={stylesProductPage.productDescription}>
           {product.productDescription}
         </p>
+
         <img
           className={stylesProductPage.productImg}
           src={product.productImg}
           alt=""
         />
-        <div className={stylesProductPage.subproductsContainer}>
-          <h1>Confira!</h1>
-          <div className={stylesProductPage.subproducts}>
-            {product.productSubproducts.map((subproduct) => (
-              <SubproductCard
-                key={subproduct.id}
-                subproduct={subproduct}
-              ></SubproductCard>
-            ))}
-          </div>
+      </div>
+      <div className={stylesProductPage.subproductsContainer}>
+        <h1 style={{ color: "#fff" }}>Confira!</h1>
+        <div className={stylesProductPage.subproducts}>
+          {product.productSubproducts.map((subproduct) => (
+            <SubproductCard
+              key={subproduct.id}
+              subproduct={subproduct}
+            ></SubproductCard>
+          ))}
+        </div>
+        <div className={stylesProductPage.container}>
           <p>
             Todos nossos produtos são personalizáveis em todos os aspectos para
             seu melhor conforto e usabilidade

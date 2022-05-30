@@ -3,7 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ffff;
+  background-color: #ffff;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .productDescription {
@@ -30,11 +32,11 @@
 }
 
 .link {
-  color: #ffff;
+  color: var(--primary-color);
 }
 
 .link:hover {
-  border-bottom: 2px #ffff solid;
+  border-bottom: 2px var(--primary-color) solid;
 }
 
 @media (max-width: 1200px) {
